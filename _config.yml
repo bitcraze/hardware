@@ -1,0 +1,15 @@
+name: Datasheets
+
+source: .
+destination: _html
+
+liquid:
+  error_mode: strict
+  strict_variables: true
+  strict_filters: true
+
+exclude: ['*.pdf']
+
+sass:
+  sass_dir: _scss
+  style: compressed

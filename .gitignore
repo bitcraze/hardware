@@ -1,0 +1,5 @@
+docs/.jekyll-cache
+.jekyll-cache
+_html/*
+_local_config.yml
+docs/*
