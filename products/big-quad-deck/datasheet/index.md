@@ -1,6 +1,7 @@
 ---
 layout: datasheet-base
 title: BigQuad deck
+sku: 102990227
 version: 1
 ---
 
