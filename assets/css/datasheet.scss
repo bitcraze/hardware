@@ -34,7 +34,6 @@ h3:before {
   counter-increment: h3counter;
 }
 
-
 .ds-img-center {
   display: block;
   margin-left: auto;
@@ -46,4 +45,10 @@ h3:before {
 table {
   @extend .table;
   @extend .table-bordered;
+}
+
+hr.ds-header {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(0, 0, 0);
 }
