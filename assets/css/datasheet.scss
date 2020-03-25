@@ -4,8 +4,14 @@
 
 @import "bootstrap";
 
+body {
+  font-size: 20px;
+  counter-reset: h2counter;
+}
+
 h1 {
   font-size: 40px;
+  counter-reset: h2counter;
 }
 
 h2 {
@@ -18,9 +24,16 @@ h3 {
   margin-bottom: 15px;
 }
 
-body {
-  font-size: 20px;
+h2:before {
+  content: counter(h2counter) ".\0000a0\0000a0";
+  counter-increment: h2counter;
+  counter-reset: h3counter;
 }
+h3:before {
+  content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+  counter-increment: h3counter;
+}
+
 
 .ds-img-center {
   display: block;
