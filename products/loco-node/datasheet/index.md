@@ -52,7 +52,7 @@ For more information on the Loco Positioning System please see the Loco Position
 
 ## Mechanical drawing
 
-{% datasheet_img Mechanical drawing; dwm1000-node-brd.png; %}
+{% datasheet_img Mechanical drawing; medium; center; dwm1000-node-brd.png; %}
 
 | ID | Type | Description |
 | -- | ---- | ----------- |

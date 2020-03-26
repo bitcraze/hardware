@@ -64,7 +64,7 @@ With the BigQuad deck you can transform your Crazyflie 2.X to a bigger quad by c
 
 ## Mechanical drawing
 
-{% datasheet_img Mechanical drawing; big-quad-brd.png; %}
+{% datasheet_img Mechanical drawing; medium; center; big-quad-brd.png; %}
 
 ## Package contents
 
@@ -84,7 +84,7 @@ To work around this issue do the following:
 * Not having BQ\_DECK\_ENABLE\_PM defined.
 * Disabling the extRx functionality by commenting out extRxInit() in bigquad.c
 
-{% datasheet_img Mechanical drawing; bigquaddeck-remove-c1.png; %}
+{% datasheet_img Mechanical drawing; small; center; bigquaddeck-remove-c1.png; %}
 
 Capacitor C1 is used to filter the current measurement and removing this has the effect that it will not be filtered any more. Still possible to use it if a deck using the SPI is not wanted any more.
 

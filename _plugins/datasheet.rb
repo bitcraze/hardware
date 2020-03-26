@@ -24,11 +24,11 @@ module Jekyll
       def render(context)
         '<div class="row">
             <div class="col-sm-6">
-              %3$s
+              <div class="ds-header-ingress">%3$s</div>
             </div>
             <div class="col-sm-6">
               <span class="pull-right">
-                <img src="%1$s/%2$s" />
+                <img class="ds-img-header" src="%1$s/%2$s" />
               </span>
             </div>
           </div>
@@ -44,19 +44,23 @@ module Jekyll
       # Takes one argument, the image
       #
       # Example
-      # {% datasheet_img myimages/myimage.png; %}
+      # {% datasheet_img My Fancy image; medium; center; myimages/myimage.png; %}
       #
+      # Supported alignment: center
+      # Supported size: small, medium, large
 
       def initialize(tag_name, text, tokens)
         super
         params = parse_args(text)
 
         @title = params[0]
-        @image = params[1]
+        @size = params[1]
+        @alignment = params[2]
+        @image = params[3]
       end
 
       def render(context)
-        '<img class="ds-img-center" src="%1$s" />' % [@image]
+        '<img class="ds-img-%1$s-%2$s" src="%3$s" />' % [@alignment, @size, @image]
       end
     end
   end
