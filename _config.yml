@@ -8,7 +8,7 @@ liquid:
   strict_variables: true
   strict_filters: true
 
-exclude: ['*.pdf']
+exclude: ['*.pdf', 'assets/html/*']
 
 sass:
   sass_dir: _scss

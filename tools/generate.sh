@@ -31,7 +31,7 @@ if $cmd; then
     # Replace - with _ ("my-product" -> "my_product")
     product=${tmp//-/_}
     # Generate the PDF
-    cmd="wkhtmltopdf --viewport-size 1280x1024 ${rootDir}/${fname} ${rootDir}/docs/${product}-datasheet.pdf"
+    cmd="wkhtmltopdf --margin-top 10 --margin-bottom 10 --header-spacing 5 --footer-html ${rootDir}/assets/html/datasheet-footer.html --header-html ${rootDir}/assets/html/datasheet-header.html --viewport-size 1280x1024 ${rootDir}/${fname} ${rootDir}/docs/${product}-datasheet.pdf"
     echo ${cmd}
     `${cmd}`
   done
