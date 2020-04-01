@@ -1,6 +1,6 @@
 ---
 layout: datasheet-base
-title: Brekout deck
+title: Breakout deck
 sku: 114990111
 version: 1
 ---
