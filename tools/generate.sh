@@ -16,7 +16,7 @@ rootDir=$scriptDir/..
 echo "url: ${rootDir}" > ${rootDir}/_local_config.yml
 
 # Execute Jekyll
-cmd="docker run --rm -it --volume=${rootDir}:/module bitcraze/web-builder jekyll build --config _config.yml,_local_config.yml"
+cmd="docker run --rm -it --volume=${rootDir}:/module bitcraze/web-builder jekyll build --config _config.yml,_local_config.yml --trace"
 echo "$cmd"
 if $cmd; then
   # Create docs directory if it doesn't exist
@@ -30,10 +30,15 @@ if $cmd; then
     tmp=${tmp#_html/products/}
     # Replace - with _ ("my-product" -> "my_product")
     product=${tmp//-/_}
+    if [ -z "$1" ] || [ $1 == $tmp ]
+    then
+      echo $product
+      echo $1
+      cmd="wkhtmltopdf --margin-top 10 --margin-bottom 10 --header-spacing 5 --footer-html ${rootDir}/assets/html/datasheet-footer.html --header-html ${rootDir}/assets/html/datasheet-header.html --viewport-size 1280x1024 ${rootDir}/${fname} ${rootDir}/docs/${product}-datasheet.pdf"
+      echo ${cmd}
+      `${cmd}`
+    fi
     # Generate the PDF
-    cmd="wkhtmltopdf --margin-top 10 --margin-bottom 10 --header-spacing 5 --footer-html ${rootDir}/assets/html/datasheet-footer.html --header-html ${rootDir}/assets/html/datasheet-header.html --viewport-size 1280x1024 ${rootDir}/${fname} ${rootDir}/docs/${product}-datasheet.pdf"
-    echo ${cmd}
-    `${cmd}`
   done
   true
 else
