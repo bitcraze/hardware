@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Loco positioning node
 sku: 114990656
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/loco-node/datasheet/Loco-node-400px-1_1024x1024.jpeg; %}

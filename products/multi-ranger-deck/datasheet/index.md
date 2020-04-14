@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Multi-ranger deck
 sku: 114991485
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/multi-ranger-deck/datasheet/multi-ranger_deck_1200px-1_1024x1024.jpg; %}

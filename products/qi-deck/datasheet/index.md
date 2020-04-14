@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Qi wireless charging deck
 sku: 114990116
 version: 1
+status: eol
 ---
 
 {% datasheet_intro products/qi-deck-1_2/datasheet/qi-charger-deck-585px.jpg; %}

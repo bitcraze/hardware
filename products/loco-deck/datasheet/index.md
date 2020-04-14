@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Loco positioning deck
 sku: 114990655
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/loco-deck/datasheet/Loco-deck-400px-1_1024x1024.jpeg; %}

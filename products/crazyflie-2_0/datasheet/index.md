@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Crazyflie 2.0
 sku: 110990440
 version: 1
+status: eol
 ---
 
 {% datasheet_intro products/crazyflie-2_0/datasheet/Crazyflie2.0-2400px-1_1024x1024.jpeg; %}

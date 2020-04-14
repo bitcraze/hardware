@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Z-ranger deck v2
 sku: 114991550
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/z-ranger-deck-2/datasheet/z-ranger_v2_585px-1.jpg; %}

@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Breakout deck
 sku: 114990111
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/breakout-deck/datasheet/Breakout-deck-400px-1_1024x1024.jpeg; %}

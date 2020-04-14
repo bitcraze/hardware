@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Prototyping deck
 sku: 114990115
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/prototyping-deck/datasheet/prototyping-deck-400px-3_1024x1024.jpg; %}

@@ -3,6 +3,7 @@ layout: datasheet-base
 title: LED-ring deck
 sku: 114990114
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/led-ring-deck/datasheet/Led-ring-deck-400px-1_1024x1024.jpg; %}

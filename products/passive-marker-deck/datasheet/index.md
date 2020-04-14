@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Motion capture marker deck
 sku: 114991794
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/passive-marker-deck/datasheet/mocap_marker_deck_1200px_1024x1024.jpg; %}

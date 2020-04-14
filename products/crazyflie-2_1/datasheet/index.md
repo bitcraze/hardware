@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Crazyflie 2.1
 sku: 114991551
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/crazyflie-2_1/datasheet/crazyflie_2.1_1200px_1024x1024.jpg; %}

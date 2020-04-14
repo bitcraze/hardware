@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Z-ranger deck
 sku: 114991072
 version: 1
+status: eol
 ---
 
 {% datasheet_intro products/z-ranger-deck/datasheet/z-ranger_deck_side_400px_1024x1024.jpeg; %}

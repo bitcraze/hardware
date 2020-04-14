@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Crazyradio PA 2.4 GHz USB dongle
 sku: 114990112
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/crazyradio-pa/datasheet/Radio-PA-2400px-5_1024x1024.jpeg; %}

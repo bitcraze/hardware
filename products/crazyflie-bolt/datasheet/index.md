@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Crazyflie Bolt
 sku: 114991537
 version: 1
+status: early-access
 ---
 
 {% datasheet_intro products/crazyflie-bolt/datasheet/crazyflie_bolt_585px.jpg; %}

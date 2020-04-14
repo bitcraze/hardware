@@ -3,6 +3,7 @@ layout: datasheet-base
 title: BigQuad deck
 sku: 102990227
 version: 1
+status: early-access
 ---
 
 {% datasheet_intro products/big-quad-deck/datasheet/BigQuadDeck-4_1024x1024.jpg; %}

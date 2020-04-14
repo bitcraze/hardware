@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Active marker deck
 sku: 114992074
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/active-marker-deck/datasheet/active-maker-front-1024px_1024x1024.jpg; %}

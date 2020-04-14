@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Buzzer deck
 sku: 102990228
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/buzzer-deck/datasheet/BuzzerDeckPic_3_of_4_1024x1024.jpg; %}

@@ -3,6 +3,7 @@ layout: datasheet-base
 title: SD-card deck
 sku: 114990852
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/sd-card-deck/datasheet/SD-deck-400px-3_1024x1024.jpeg; %}

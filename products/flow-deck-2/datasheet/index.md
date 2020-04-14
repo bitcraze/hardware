@@ -3,6 +3,7 @@ layout: datasheet-base
 title: Flow deck v2
 sku: 114991549
 version: 1
+status: active
 ---
 
 {% datasheet_intro products/flow-deck-2/datasheet/flow_deck_v2_585px.jpg; %}
