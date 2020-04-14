@@ -107,3 +107,25 @@ end
 Liquid::Template.register_tag('datasheet_intro', Jekyll::Datasheet::DatasheetIntro)
 Liquid::Template.register_tag('datasheet_img', Jekyll::Datasheet::DatasheetImg)
 Liquid::Template.register_tag('datasheet_notice', Jekyll::Datasheet::DatasheetNotice)
+
+Jekyll::Hooks.register :pages, :post_init do |page|
+  early_access_text = "{% datasheet_notice success; %}
+This product is in early access stage. It means that while the hardware is working and tested,
+the software is still pretty much work in progress. For more information see our
+[early access description page](https://www.bitcraze.io/early-access/).
+{% enddatasheet_notice %}\n"
+
+  eol_text = "{% datasheet_notice warning; %}
+This product has reach end-of-life and is not longer being manufactured. Stock might still be available
+in our online store or though retailers, but it's not recommended to be used for new set-ups.
+{% enddatasheet_notice %}\n"
+  if page.ext == ".md"
+    first_header_index = page.content.index('##')
+    if (page.data["status"] == "early-access")
+      page.content = page.content.insert(first_header_index, early_access_text)
+    end
+    if (page.data["status"] == "eol")
+      page.content = page.content.insert(first_header_index, eol_text)
+    end
+  end
+end
