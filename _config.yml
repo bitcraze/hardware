@@ -2,6 +2,7 @@ name: Datasheets
 
 source: .
 destination: _html
+url: /root
 
 liquid:
   error_mode: strict
