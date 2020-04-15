@@ -78,7 +78,7 @@ module Jekyll
       # Some notice here!
       # {% enddatasheet_notice %}
       #
-      # Supported types: warning (yellow), danger (red), secondary (grey)
+      # Supported types: warning (yellow), danger (red), success (green)
 
       def initialize(tag_name, text, tokens)
         super
@@ -108,6 +108,8 @@ Liquid::Template.register_tag('datasheet_intro', Jekyll::Datasheet::DatasheetInt
 Liquid::Template.register_tag('datasheet_img', Jekyll::Datasheet::DatasheetImg)
 Liquid::Template.register_tag('datasheet_notice', Jekyll::Datasheet::DatasheetNotice)
 
+# Hooked used to inject notice depending on product status
+# This can be either early-access, active or eol
 Jekyll::Hooks.register :pages, :post_init do |page|
   early_access_text = "{% datasheet_notice success; %}
 This product is in early access stage. It means that while the hardware is working and tested,
