@@ -10,10 +10,10 @@ set -e
 
 # Figure out the path for the directory
 scriptDir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-rootDir=$scriptDir/..
+rootDir=$scriptDir/../..
 
 # Execute Jekyll
-cmd="docker run --rm -it --volume=${rootDir}:/module bitcraze/web-builder jekyll build --config _config.yml --trace"
+cmd="jekyll build --config _config.yml --trace"
 echo "$cmd"
 if $cmd; then
   # Create docs directory if it doesn't exist
@@ -22,7 +22,7 @@ if $cmd; then
   # Find all HTML files and generate PDFs from them
   find _html -type f -name "*.html" | while read fname
   do
-    # Take the path "_html/products/myproduct/datasheet/index.html" and extract "my-product"
+    # Take the path "_html/products/my-product/datasheet/index.html" and extract "my-product"
     tmp=${fname%/datasheet/index.html}
     tmp=${tmp#_html/products/}
     # Replace - with _ ("my-product" -> "my_product")
@@ -31,7 +31,7 @@ if $cmd; then
     then
       echo $product
       echo $1
-      cmd="docker run -v ${rootDir}:/root --rm icalialabs/wkhtmltopdf:alpine --margin-top 10 --margin-bottom 10 --header-spacing 5 --footer-html /root/assets/html/datasheet-footer.html --header-html /root/assets/html/datasheet-header.html --viewport-size 1280x1024 /root/${fname} /root/docs/${product}-datasheet.pdf"
+      cmd="wkhtmltopdf --margin-top 10 --margin-bottom 10 --header-spacing 5 --footer-html /module/assets/html/datasheet-footer.html --header-html /module/assets/html/datasheet-header.html --viewport-size 1280x1024 /module/${fname} /module/docs/${product}-datasheet.pdf"
       echo ${cmd}
       `${cmd}`
     fi

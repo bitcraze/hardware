@@ -72,12 +72,13 @@ You have been warned!
 
 ### Generating
 
-To generate the datasheets you need [Docker](https://www.docker.com/) installed.
+You need the [toolbelt](https://github.com/bitcraze/toolbelt) to generate the
+datasheets.
 
 The generation is done using the following command:
 
 ```text
-$ tools/generate.sh [datasheet]
+$ tb build [datasheet]
 
   datasheet - Optional directory name of datasheet for generating
               only one datasheet. If this is not specified all the
