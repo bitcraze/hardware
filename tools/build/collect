@@ -23,5 +23,6 @@ do
   fileName=${fname#${tmp}/}
   destination=${docsDir}/${product}
   echo "Copy ${fname} to ${destination}"
-  cp ${fname} ${destination}
+  mkdir -p ${destination}
+  cp ${fname} ${destination}/.
 done
