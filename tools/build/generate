@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+set -e
+
+# Generate all datasheets from markdown to PDF
+#
+# This script will use Jekyll to generate Markdown -> HTML and wkhtmltopdf to
+# generate HTML -> PDF
+#
+# The generated PDF will be named after which directory it is stored in
+
+# Figure out the path for the directory
+scriptDir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+rootDir=$scriptDir/../..
+
+# Execute Jekyll
+cmd="jekyll build --config _config.yml --trace"
+echo "$cmd"
+if $cmd; then
+  # Find all HTML files and generate PDFs from them
+  find generated/html/products -type f -name "*.html" | while read fname
+  do
+    # Take the path "generated/html/products/my-product/datasheet/index.html" and extract "my-product"
+    tmp=${fname%/datasheet/index.html}
+    tmp=${tmp#generated/html/products/}
+    # Replace - with _ ("my-product" -> "my_product")
+    product=${tmp//-/_}
+    if [ -z "$1" ] || [ $1 == $tmp ]
+    then
+      destination=/module/generated/docs/${product}
+      # Create destination directories
+      mkdir -p ${destination}
+      echo $product
+      cmd="wkhtmltopdf --margin-top 10 --margin-bottom 10 --header-spacing 5 --footer-html /module/src/assets/html/datasheet-footer.html --header-html /module/src/assets/html/datasheet-header.html --viewport-size 1280x1024 /module/${fname} ${destination}/${product}-datasheet.pdf"
+      echo ${cmd}
+      `${cmd}`
+    fi
+    # Generate the PDF
+  done
+  true
+else
+  echo "Error when running Jekyll"
+fi

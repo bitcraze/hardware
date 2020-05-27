@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+set -e
+
+# Copy static PDFs from the electronics dirs in the src tree to the generated tree
+
+# Figure out the path for the directories
+scriptDir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+rootDir=$scriptDir/../..
+docsDir=${rootDir}/generated/docs
+productsDir=src/products
+
+# Copy all PDFs in the product tree
+find ${productsDir} -type f -name "*.pdf" | while read fname
+do
+  # Take the path "src/products/my-product/electronics/some-file-rev-c.pdf" and extract "my-product"
+  tmp=${fname%/electronics/*.pdf}
+  tmp=${tmp#src/products/}
+  # Replace - with _ ("my-product" -> "my_product")
+  product=${tmp//-/_}
+
+  # Take the path "src/products/my-product/electronics/some-file-rev-c.pdf" and extract "some-file-rev-c.pdf"
+  tmp=${fname%/*.pdf}
+  fileName=${fname#${tmp}/}
+  destination=${docsDir}/${product}
+  echo "Copy ${fname} to ${destination}"
+  cp ${fname} ${destination}
+done

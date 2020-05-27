@@ -78,7 +78,7 @@ datasheets.
 The generation is done using the following command:
 
 ```text
-$ tb build [datasheet]
+$ tb generate [datasheet]
 
   datasheet - Optional directory name of datasheet for generating
               only one datasheet. If this is not specified all the
