@@ -1,15 +1,15 @@
 name: Datasheets
 
-source: .
-destination: _html
-url: /module
+source: src
+destination: generated/html
+url: /module/generated/html
 
 liquid:
   error_mode: strict
   strict_variables: true
   strict_filters: true
 
-exclude: ['*.pdf', 'assets/html/*']
+exclude: ['*.pdf', 'src/assets/html/*']
 
 sass:
   sass_dir: _scss

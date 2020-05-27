@@ -12,26 +12,27 @@ set -e
 scriptDir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 rootDir=$scriptDir/../..
 
+# Create destination directories
+mkdir -p ${rootDir}/generated/docs
+mkdir -p ${rootDir}/generated/html
+
 # Execute Jekyll
 cmd="jekyll build --config _config.yml --trace"
 echo "$cmd"
 if $cmd; then
-  # Create docs directory if it doesn't exist
-  mkdir -p ${rootDir}/docs
-
   # Find all HTML files and generate PDFs from them
-  find _html -type f -name "*.html" | while read fname
+  find generated/html/products -type f -name "*.html" | while read fname
   do
     # Take the path "_html/products/my-product/datasheet/index.html" and extract "my-product"
     tmp=${fname%/datasheet/index.html}
-    tmp=${tmp#_html/products/}
+    tmp=${tmp#generated/html/products/}
     # Replace - with _ ("my-product" -> "my_product")
     product=${tmp//-/_}
     if [ -z "$1" ] || [ $1 == $tmp ]
     then
       echo $product
       echo $1
-      cmd="wkhtmltopdf --margin-top 10 --margin-bottom 10 --header-spacing 5 --footer-html /module/assets/html/datasheet-footer.html --header-html /module/assets/html/datasheet-header.html --viewport-size 1280x1024 /module/${fname} /module/docs/${product}-datasheet.pdf"
+      cmd="wkhtmltopdf --margin-top 10 --margin-bottom 10 --header-spacing 5 --footer-html /module/src/assets/html/datasheet-footer.html --header-html /module/src/assets/html/datasheet-header.html --viewport-size 1280x1024 /module/${fname} /module/generated/docs/${product}-datasheet.pdf"
       echo ${cmd}
       `${cmd}`
     fi
