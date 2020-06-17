@@ -2,12 +2,12 @@
 layout: datasheet-base
 title: AI-deck
 sku: 114991982
-version: 1
+version: 2
 status: early-access
 ---
 
 {% datasheet_intro products/ai-deck/datasheet/ai-deck-side-585px.jpg; %}
-The AI-deck is built around the GAP8 RISC-V multi-core MCU build for AI on the edge purposes. Adding to this a QVGA monocrom camera and a ESP32 WiFi MCU. This all together creates a pretty good platform to develop low power AI on the edge for a drone.
+The AI-deck is built around the GAP8 RISC-V multi-core MCU build for AI on the edge purposes. Adding to this a QVGA Bayer RGB camera and a ESP32 WiFi MCU. This all together creates a pretty good platform to develop low power AI on the edge for a drone.
 
 {% enddatasheet_intro %}
 
@@ -21,7 +21,7 @@ The AI-deck is currently in the early-access development stage and even though t
 ## Features
 
 * GAP8 – Ultra low power 8+1 core RISC-V MCU
-* Himax HM01B0 – Ultra low power 320×320 greyscale camera.
+* Himax HM01B0 – Ultra low power 320×320 Bayer RGB camera.
 * 512 Mbit HyperFlash and 64 Mbit HyperRAM
 * ESP32 for WiFi and more (NINA-W102)
 * 2 x Cortex-M 10-pin JTAG for GAP8 and ESP32
