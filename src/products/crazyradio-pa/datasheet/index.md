@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Crazyradio PA 2.4 GHz USB dongle
 sku: 114990112
-version: 1
+version: 2
 status: active
 ---
 
@@ -85,10 +85,12 @@ give the same range increase as with the Crazyflie 2.X.
 
 | Revision | Comment |
 | ------- | ------- |
-| D | Initial release |
+| C | Updated balun footprint |
+| B | Initial release |
 
 ## History
 
 | Version | Comment | Date |
 | ------- | ------- | ---- |
+| 2 | Updated revision history | 2020-06-24 |
 | 1 | Initial release | 2020-04-01 |
