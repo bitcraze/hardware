@@ -72,3 +72,4 @@ The AI-deck is currently in the early-access development stage and even though t
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-05-14 |
+| 2 | Changed to Bayer RGB camera | 2020-06-17 |
