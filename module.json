@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "environmentReq": [
+    "jekyll", "wkhtmltopdf"
+  ],
+  "artifacts": {
+    "file": [
+      {
+        "source": "generated/docs.zip",
+        "insertTag": true,
+        "destination": "currDir"
+      }
+    ]
+  }
+}

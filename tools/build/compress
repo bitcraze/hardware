@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+# Zip the generated PDF tree
+
+# Figure out the path for the directories
+scriptDir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+docsDir=${scriptDir}/../../generated/docs
+
+echo "Compressing files..."
+
+pushd ${docsDir}
+zip -r ../docs.zip .
+popd
