@@ -1,7 +1,7 @@
 ---
 layout: datasheet-base
 title: AI-deck color camera module
-sku: 800000004
+sku: 800000003
 version: 1
 status: active
 ---

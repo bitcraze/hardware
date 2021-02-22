@@ -1,7 +1,7 @@
 ---
 layout: datasheet-base
 title: AI-deck monochrome camera module
-sku: 800000003
+sku: 800000004
 version: 1
 status: active
 ---
