@@ -34,7 +34,7 @@ If you’re a bit handy with a soldering iron you can even solder multiple charg
   * Nominal voltage: 3.7 V (1 Cell)
   * Discharge: 15C
   * Charge: 2C
-  * Operating Temperature: 0 ~35°C (Charging) / -20~60°C (Discharging)
+  * Operating Temperature: 0~45°C (Charging) / 0~60°C (Discharging)
   * Connector: Molex 51005-2P (Pin 1 positive)
 
 ## Mechanical specifications
@@ -70,4 +70,4 @@ If you’re a bit handy with a soldering iron you can even solder multiple charg
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-05-14 |
-| 2 | Corrected battery capacity from 240mAh to 250mAh | 2021-02-24 |
+| 2 | Corrected battery capacity from 240mAh to 250mAh and updated operating temperature  | 2021-02-24 |
