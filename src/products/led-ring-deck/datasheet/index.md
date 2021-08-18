@@ -33,6 +33,7 @@ can be selected.
 * 12 independently addressable RGB LED modules facing downwards (W2812B)
 * 2 strong white LEDs facing forward, emitting more than 1800 mcd
 * 1-wire memory for automatic expansion board detection
+* Typical power consumption: 330mA @ 5.0V and 680mA @ 3.0V
 
 ## Mechanical specifications
 

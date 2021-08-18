@@ -37,6 +37,7 @@ which gives position and will in the future also give pose of the Crazyflie.
 * 4 TS4231 IR receivers
 * UART and I2C communication to Crazyflie deck expansion port
 * UART pads available to solder a 2.54mm pin header for connection to external system, eg. Arduino (**NOTE** Max signal level 3V!)
+* Typical current consumption 30mA
 
 ## Mechanical specifications
 
