@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Crazyflie 2.1
 sku: 114991551
-version: 1
+version: 2
 status: active
 ---
 
@@ -78,7 +78,7 @@ The expansion connector includes the following:
 
 Please note the following:
 
-* The Crazyflie 2.0 is a 3.0V system, meaning a high output will be 3.0V but still compatible with a 3.3V system.
+* The Crazyflie 2.1 is a 3.0V system, meaning a high output will be 3.0V but still compatible with a 3.3V system.
 * All IO pins are 5V tolerant except PA5 and the NRF51 pins
 * The NRF51 pins can be multiplexed with any of the available NRF51 peripheral.
 * The STM32F405RG pins can be multiplexed with more functions.
@@ -125,3 +125,4 @@ The Crazyflie 2.1 is delivered as a kit that contains the following parts:
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-03-25 |
+| 2 | Corrected CF type number (2.0 -> 2.1) | 2021-09-02 |
