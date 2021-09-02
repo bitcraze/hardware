@@ -9,6 +9,11 @@
         "source": "generated/docs.zip",
         "insertTag": true,
         "destination": "currDir"
+      },
+      {
+        "source": "generated/md.zip",
+        "insertTag": true,
+        "destination": "currDir"
       }
     ]
   }

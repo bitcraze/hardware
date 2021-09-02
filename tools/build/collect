@@ -7,9 +7,10 @@ set -e
 scriptDir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 rootDir=$scriptDir/../..
 docsDir=${rootDir}/generated/docs
+mdDir=${rootDir}/generated/md
 productsDir=src/products
 
-# Copy all PDFs in the product tree
+# Copy all PDFs in the product tree.
 find ${productsDir} -type f -name "*.pdf" | while read fname
 do
   # Take the path "src/products/my-product/electronics/some-file-rev-c.pdf" and extract "my-product"
@@ -25,4 +26,18 @@ do
   echo "Copy ${fname} to ${destination}"
   mkdir -p ${destination}
   cp ${fname} ${destination}/.
+done
+
+# Copy all product source files, to be used on the web to generate product pages
+find src/products -type d -name "datasheet" | while read dname
+do
+  # dname will contain something like "src/products/sd-card-deck/datasheet", extract the "sd-card-deck" part and covert to "sd_card_deck"
+  tmp=${dname%/datasheet}
+  tmp=${tmp#src/products/}
+  product=${tmp//-/_}
+  destination=${mdDir}/${product}
+
+  mkdir -p ${destination}
+  echo "Copy ${dname}/* to ${destination}"
+  cp ${dname}/* ${destination}
 done

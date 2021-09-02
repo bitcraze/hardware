@@ -6,9 +6,14 @@ set -e
 # Figure out the path for the directories
 scriptDir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 docsDir=${scriptDir}/../../generated/docs
+mdDir=${scriptDir}/../../generated/md
 
 echo "Compressing files..."
 
 pushd ${docsDir}
 zip -r ../docs.zip .
+popd
+
+pushd ${mdDir}
+zip -r ../md.zip .
 popd
