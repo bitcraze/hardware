@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/flow-breakout/datasheet/flow_breakout_585px-1.jpg; %}
+{% datasheet_intro flow_breakout_585px-1.jpg; %}
 The Flow breakout board is used for motion tracking and can easily be connected to any robotics
 project or other design.
 {% enddatasheet_intro %}

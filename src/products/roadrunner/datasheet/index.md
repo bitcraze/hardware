@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/roadrunner/datasheet/roadrunner_585px.jpg; %}
+{% datasheet_intro roadrunner_585px.jpg; %}
 The Roadrunner is a Loco positioning compatible tag that combines the hardware of a Crazyflie with the UWB positioning of the Loco products in a handy package. It's ready for mounting on 3rd party robots and supports power supplies up to 12V. It can communicate through cable connection or via radio.
 {% enddatasheet_intro %}
 

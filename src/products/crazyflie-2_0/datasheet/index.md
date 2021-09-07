@@ -6,7 +6,7 @@ version: 1
 status: eol
 ---
 
-{% datasheet_intro products/crazyflie-2_0/datasheet/Crazyflie2.0-2400px-1_1024x1024.jpeg; %}
+{% datasheet_intro Crazyflie2.0-2400px-1_1024x1024.jpeg; %}
 The Crazyflie 2.0 is a versatile open source flying development platform that only weighs 27g and fits in the palm of your hand.
 {% enddatasheet_intro %}
 

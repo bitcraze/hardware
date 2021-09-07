@@ -6,7 +6,7 @@ version: 1
 status: eol
 ---
 
-{% datasheet_intro products/qi-deck-1_2/datasheet/qi-charger-deck-585px.jpg; %}
+{% datasheet_intro qi-charger-deck-585px.jpg; %}
 Want to charge your Crazyflie 2.X without connecting the uUSB cable? Then the
 Crazyflie 2.X Qi inductive charging expansion board is a great option.
 

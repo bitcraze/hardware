@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/motor-mounts-7mm/datasheet/Motor-mounts-crazyflie-2.0-400px-1.JPG; %}
+{% datasheet_intro Motor-mounts-crazyflie-2.0-400px-1.JPG; %}
 Spare motor mounts for Crazyflie 2.X
 {% enddatasheet_intro %}
 

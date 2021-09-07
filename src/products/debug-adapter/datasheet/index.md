@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/debug-adapter/datasheet/debug-adapter-kit-400px-3_1024x1024.jpg; %}
+{% datasheet_intro debug-adapter-kit-400px-3_1024x1024.jpg; %}
 This adapter is used to convert a number of standard connectors into the
 debug connector that is used on Bitcraze products.
 {% enddatasheet_intro %}
@@ -55,4 +55,3 @@ pinouts.
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-01 |
-

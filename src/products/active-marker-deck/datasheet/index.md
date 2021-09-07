@@ -6,7 +6,8 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/active-marker-deck/datasheet/active-maker-front-1024px_1024x1024.jpg; %}
+
+{% datasheet_intro active-maker-front-1024px_1024x1024.jpg; %}
 The active marker deck gives users robust and long range tracking using Qualisys QTM.
 The deck supports up to 4 IDs so it's possible to have many different configurations
 without having to carry around bulky spherical markers.

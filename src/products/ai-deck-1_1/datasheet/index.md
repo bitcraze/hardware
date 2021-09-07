@@ -6,7 +6,7 @@ version: 1
 status: early-access
 ---
 
-{% datasheet_intro products/ai-deck-1_1/datasheet/ai-deck-side-585px.jpg; %}
+{% datasheet_intro ai-deck-side-585px.jpg; %}
 The AI-deck 1.1 is built around the GAP8 RISC-V multi-core MCU build for AI on the edge purposes. Adding to this a QVGA monochrome camera and a ESP32 WiFi MCU. This all together creates a pretty good platform to develop low power AI on the edge for a drone.
 
 {% enddatasheet_intro %}

@@ -6,13 +6,13 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/motor-6mm/datasheet/6mm_DC_motor_400px.JPG; %}
+{% datasheet_intro 6mm_DC_motor_400px.JPG; %}
 Spare motor for Crazyflie 1.0
 {% enddatasheet_intro %}
 
 ## Mechanical specifications
 
-* Diameter: 6 mm 
+* Diameter: 6 mm
 * Length: 15 mm
 * Shaft length: 3.5 mm
 * Shaft diameter: 0.8 mm

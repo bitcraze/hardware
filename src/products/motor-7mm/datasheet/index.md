@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/motor-7mm/datasheet/7mm_DC_motor_400px.JPG; %}
+{% datasheet_intro 7mm_DC_motor_400px.JPG; %}
 Spare motor for Crazyflie 2.X
 {% enddatasheet_intro %}
 

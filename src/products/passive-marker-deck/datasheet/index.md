@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/passive-marker-deck/datasheet/mocap_marker_deck_1200px_1024x1024.jpg; %}
+{% datasheet_intro mocap_marker_deck_1200px_1024x1024.jpg; %}
 Placing motion capture markers on the Crazyflie 2.X can be a hassle, but this deck makes
 it really easy. With lots of holes to mount markers in you can create different configurations
 to support identification.

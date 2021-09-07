@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/sd-card-deck/datasheet/SD-deck-400px-3_1024x1024.jpeg; %}
+{% datasheet_intro SD-deck-400px-3_1024x1024.jpeg; %}
 Add the possibility to read and write files to a micro SD card. This could be used for
 high speed logging or for storing configuration.
 {% enddatasheet_intro %}

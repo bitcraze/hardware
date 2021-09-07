@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/breakout-deck/datasheet/Breakout-deck-400px-1_1024x1024.jpeg; %}
+{% datasheet_intro Breakout-deck-400px-1_1024x1024.jpeg; %}
 Test new hardware easily without soldering by using the breakout expansion board. Just build
 the circuit on a breadboard and attach a Crazyflie family product to it.
 {% enddatasheet_intro %}

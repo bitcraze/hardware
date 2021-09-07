@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/propellers/datasheet/Propellers-400px-1_1024x1024.jpeg; %}
+{% datasheet_intro Propellers-400px-1_1024x1024.jpeg; %}
 Spare propellers that fit Crazyflie 1.0 and Crazyflie 2.X
 
 {% enddatasheet_intro %}

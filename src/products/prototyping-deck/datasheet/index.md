@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/prototyping-deck/datasheet/prototyping-deck-400px-3_1024x1024.jpg; %}
+{% datasheet_intro prototyping-deck-400px-3_1024x1024.jpg; %}
 Add a prototyping area to your Crazyflie 2.X and lift your electronics into the air.
 Just solder directly on the expansion board and plug it to the expansion port.
 {% enddatasheet_intro %}

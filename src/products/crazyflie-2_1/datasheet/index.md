@@ -6,7 +6,7 @@ version: 2
 status: active
 ---
 
-{% datasheet_intro products/crazyflie-2_1/datasheet/crazyflie_2.1_1200px_1024x1024.jpg; %}
+{% datasheet_intro crazyflie_2.1_1200px_1024x1024.jpg; %}
 The latest version of the successful Crazyflie development platform comes with improved flight performance, durability and radio.
 Together with an extensive ecosystem of software and deck expansions it's ideal for education, research and swarming.
 {% enddatasheet_intro %}

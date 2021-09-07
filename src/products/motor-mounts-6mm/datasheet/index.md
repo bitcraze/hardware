@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/motor-mounts-6mm/datasheet/Motor-mounts-crazyflie-1.0-400px-1.JPG; %}
+{% datasheet_intro Motor-mounts-crazyflie-1.0-400px-1.JPG; %}
 Spare motor mounts for Crazyflie 1.0
 {% enddatasheet_intro %}
 

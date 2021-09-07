@@ -40,10 +40,13 @@ Used to create the ingress and image at the start of the datasheet. The
 tag takes one argument, the image.
 
 ```liquid
-{% datasheet_intro products/my-fancy-product/datasheet/my-fancy-image-jpg; %}
+{% datasheet_intro my-fancy-image-jpg; %}
 This is the ingress for the datahseet right here!
 {% enddatasheet_intro %}
 ```
+
+Note: The image should be located in the same folder as the markdown file. A full path
+will not work when generating product pages on the web from the markdown.
 
 ##### Inserting images
 
@@ -56,6 +59,9 @@ This tag is used to insert images and takes three arguments:
 ```liquid
 {% datasheet_img My Fancy image; medium; center; my-fancy-image.png; %}
 ```
+
+Note: The image should be located in the same folder as the markdown file. A full path
+will not work when generating product pages on the web from the markdown.
 
 ##### Notice
 

@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/loco-deck/datasheet/Loco-deck-400px-1_1024x1024.jpeg; %}
+{% datasheet_intro Loco-deck-400px-1_1024x1024.jpeg; %}
 The Loco positioning Deck is a Tag in the Loco Positioning system and measures the distance to Anchors.
 The distances are used to estimate the absolute position of the Crazyflie 2.X in the room, which
 can be used for autonomous flight. To read more about the Loco positioning deck go to our website.

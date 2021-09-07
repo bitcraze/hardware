@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/z-ranger-deck-2/datasheet/z-ranger_v2_585px-1.jpg; %}
+{% datasheet_intro z-ranger_v2_585px-1.jpg; %}
 The Z-ranger deck v2 uses a laser sensor to measure the distance to the ground and adds
 the possibility to fly with precise height control.
 {% enddatasheet_intro %}

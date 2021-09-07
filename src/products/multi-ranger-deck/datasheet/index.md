@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/multi-ranger-deck/datasheet/multi-ranger_deck_1200px-1_1024x1024.jpg; %}
+{% datasheet_intro multi-ranger_deck_1200px-1_1024x1024.jpg; %}
 The multi-ranger deck gives the Crazyflie 2.X the ability to detect objects around it.
 This is done by measuring the distance to objects in the following 5 directions:
 front/back/left/right/up with mm precision up to 4 meters.
@@ -29,7 +29,7 @@ the sensors are conneted to a GPIO extender that can individuall reset the senso
 ## Electrical specification
 
 * 5 x VL53L1x ToF sensor to measure distance up to 4 meters within a few millimeters (depending on surface and light conditions)
-* PCA9534 I2C IO expander connected to resets of all 
+* PCA9534 I2C IO expander connected to resets of all
 * 1-wire memory for automatic expansion deck detection
 
 ## Mechanical specifications

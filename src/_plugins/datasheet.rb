@@ -5,13 +5,13 @@ module Jekyll
 
     class DatasheetIntro < Liquid::Block
       include Jekyll::PluginHelper
-  
+
       # Used to create the header of the datasheet
       #
       # Takes one argument for the image of the product
       # and the short ingress is in the block
       #
-      # {% datasheet_intro myimages/myimage.png; %}
+      # {% datasheet_intro myimage.png; %}
       # Some ingress here for the product
       # {% enddatasheet_intro %}
       #
@@ -20,19 +20,19 @@ module Jekyll
         super
         @params = parse_args(text)
       end
-  
+
       def render(context)
         '<div class="row">
             <div class="col-sm-6">
-              <div class="ds-header-ingress">%3$s</div>
+              <div class="ds-header-ingress">%2$s</div>
             </div>
             <div class="col-sm-6">
               <span class="pull-right">
-                <img class="ds-img-header" src="%1$s/%2$s" />
+                <img class="ds-img-header" src="%1$s" />
               </span>
             </div>
           </div>
-          ' % [context.registers[:site].config['url'], @params[0], markdownify(super, context)]
+          ' % [@params[0], markdownify(super, context)]
       end
     end
 

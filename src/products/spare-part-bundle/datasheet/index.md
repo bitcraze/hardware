@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/spare-part-bundle/datasheet/spare-part-bundle-400px.jpg; %}
+{% datasheet_intro spare-part-bundle-400px.jpg; %}
 Get everything you need to keep your Crazyflie 2.X in shape even after some hard crashes.
 {% enddatasheet_intro %}
 
@@ -23,7 +23,7 @@ A handy collection of spare parts for your Crazyflie 2.X.
 
 ## Mechanical specification
 
-* 7mm DC motor  
+* 7mm DC motor
   * Diameter: 7.0 mm
   * Length: 16.0 mm
   * Shaft length: 3.5 mm

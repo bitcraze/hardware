@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/battery-deck/datasheet/Battery-holder-2400px-1_1024x1024.jpeg; %}
+{% datasheet_intro Battery-holder-2400px-1_1024x1024.jpeg; %}
 The battery holder deck is a lightweight deck used to hold the battery in place when
 no other decks are attached above the Crazyflie 2.X
 {% enddatasheet_intro %}

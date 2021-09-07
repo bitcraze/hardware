@@ -6,7 +6,7 @@ version: 2
 status: active
 ---
 
-{% datasheet_intro products/lipo-charger-500ma-w-battery/datasheet/charger-battery-400px-1_1024x1024.jpg; %}
+{% datasheet_intro charger-battery-400px-1_1024x1024.jpg; %}
 Use the Bitcraze battery charger to always have your spare batteries full to maximize your flight time.
 {% enddatasheet_intro %}
 

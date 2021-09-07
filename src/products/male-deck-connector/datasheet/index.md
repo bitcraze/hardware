@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/male-deck-connector/datasheet/male-connector-2400px-1_1024x1024.jpg; %}
+{% datasheet_intro male-connector-2400px-1_1024x1024.jpg; %}
 Spare male deck connectors
 {% enddatasheet_intro %}
 

@@ -6,7 +6,7 @@ version: 1
 status: early-access
 ---
 
-{% datasheet_intro products/lighthouse-deck/datasheet/lighthouse_deck_1200px-1_1024x1024.jpg; %}
+{% datasheet_intro lighthouse_deck_1200px-1_1024x1024.jpg; %}
 Using the Lighthouse deck together with the HTC Vive basestations (aka Lighthouse) the
 Crazyflie is able to acheive high precision positioning. This enables high precision flying
 for autonomous flight and swarming at low cost.

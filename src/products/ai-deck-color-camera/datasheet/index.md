@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro products/ai-deck-color-camera/datasheet/608H_A_585px.jpg; %}
+{% datasheet_intro 608H_A_585px.jpg; %}
 The AI-deck color camera module is a color camera module, HM01B0-ANA, with a 320 x 320 resolution targeting computer vision applications from Himax. For full datasheet please contact Himax Technologies Inc.
 {% enddatasheet_intro %}
 
@@ -15,7 +15,7 @@ The AI-deck color camera module is a color camera module, HM01B0-ANA, with a 320
 The AI-deck color camera module is a color (Bayer RGB) camera module to exchange the monochrome camera module for, which comes with the AI-deck 1.1. This is handy if you want to work with color images (Bayer RGB).
 
 ## Sensor specification
-The HM01B0 is an Ultra Low Power Image Sensor (ULPIS) that enables the integration of an “Always-on” camera for computer vision applications such as gestures, intelligent ambient light and proximity sensing, tracking and object identification. The unique architecture of the sensor enables the sensor to consume very low power of <4mW at QVGA 60FPS, <2mW at QVGA 30FPS, and <1.1mW at QQVGA 30FPS. 
+The HM01B0 is an Ultra Low Power Image Sensor (ULPIS) that enables the integration of an “Always-on” camera for computer vision applications such as gestures, intelligent ambient light and proximity sensing, tracking and object identification. The unique architecture of the sensor enables the sensor to consume very low power of <4mW at QVGA 60FPS, <2mW at QVGA 30FPS, and <1.1mW at QQVGA 30FPS.
 
 The HM01B0 contains 324 x 324 pixel resolutions and supports a 324 x 244 window mode which can be readout at a maximum frame rate of 60FPS, and a 2x2 monochrome binning mode with a maximum frame rate of 120FPS. The video data is transferred over a configurable 1-bit, 4-bit or 8-bit video interface with support for frame and line synchronization. The sensor integrates a black level calibration circuit, automatic exposure and gain control loop, self-oscillator and motion detection circuit with interrupt output to reduce host computation and commands to the sensor to optimize the system power consumption.
 
@@ -54,7 +54,7 @@ The HM01B0 contains 324 x 324 pixel resolutions and supports a 324 x 244 window 
 
 * Weight: 0.2g
 * Size (WxHxD): 7.5x5x15mm
-* Connector: Molex-503776-2410 
+* Connector: Molex-503776-2410
 
 ## Mechanical drawing
 
