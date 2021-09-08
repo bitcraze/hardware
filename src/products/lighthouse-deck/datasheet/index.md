@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Lighthouse positioning deck
 sku: 114991751
-version: 1
+version: 2
 status: active
 ---
 
