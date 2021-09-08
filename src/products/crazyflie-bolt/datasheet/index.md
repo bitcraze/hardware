@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Crazyflie Bolt
 sku: 114991537
-version: 1
+version: 2
 status: early-access
 ---
 
@@ -105,11 +105,6 @@ mounted on the arms as this frees up space for decks.
 * If higher then 8A is wanted only connect the signal wires from the ESC connectors to the ESC.
 Preferably still power the Bolt control board via the battery connector so the battery voltage can be monitored.
 
-{% datasheet_notice warning; %}
-**NOTE:** Remember that a bigger quadcopter can be dangerous! Always use adequate prodction and
-always test your code without propellers attached.
-{% enddatasheet_notice %}
-
 ### Example connection
 
 Below is an image of an example setup:
@@ -133,6 +128,13 @@ Below is an image of an example setup:
 ## Mechanical drawing
 
 {% datasheet_img Mechanical drawing; large; center; crazyflie-bolt-mechanics.png; %}
+
+## Caution
+
+{% datasheet_notice warning; %}
+**NOTE:** Remember that a bigger quadcopter can be dangerous! Always use adequate prodction and
+always test your code without propellers attached.
+{% enddatasheet_notice %}
 
 ## Package contents
 
@@ -169,3 +171,4 @@ and using low KV motors.
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-07 |
+| 2 | Changed layout | 2021-09-08 |
