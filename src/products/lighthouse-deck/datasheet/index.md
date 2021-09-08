@@ -3,7 +3,7 @@ layout: datasheet-base
 title: Lighthouse positioning deck
 sku: 114991751
 version: 1
-status: early-access
+status: active
 ---
 
 {% datasheet_intro lighthouse_deck_1200px-1_1024x1024.jpg; %}
@@ -68,3 +68,4 @@ which gives position and will in the future also give pose of the Crazyflie.
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-01 |
+| 2 | Changed state from Early access to Active | 2021-09-08 |
