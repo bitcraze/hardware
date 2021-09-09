@@ -33,7 +33,6 @@ Using the Crazyflie bolt it possible to scale up your Crazyflie research or to b
 * STM32F405 main application MCU (Cortex-M4, 168MHz, 192kb SRAM, 1Mb flash)
 * nRF51822 radio and power management MCU (Cortex-M0, 32Mhz, 16kb SRAM, 128kb flash)
 * micro-USB connector
-* On-board LiPo charger with 100mA, 500mA and 980mA modes available
 * Full speed USB device interface
 * Partial USB OTG capability (USB OTG present but no 5V output)
 * 8KB EEPROM
@@ -54,7 +53,7 @@ Using the Crazyflie bolt it possible to scale up your Crazyflie research or to b
 ## Interface specification
 
 * 1 x Full speed uUSB
-* 2 x Crazyflie expansion connectors (see blow)
+* 2 x Crazyflie expansion connectors (see below)
 * 2 x u.FL connectors
 * 4 x ESC connectors using PWM / OneShot125 (JST-PH)
 * 1 x XT30 battery connector
@@ -68,7 +67,7 @@ The expansion connector includes the following:
 
 * VCC 3.0V (max 100mA)
 * GND
-* VCOM (unregulated VBAT or VUSB, max 1A)
+* VCOM (if input above 5V, 5V@400mA, else VBAT@400mA)
 * VUSB (both for input and output)
 * I2C (400kHz)
 * SPI
@@ -124,6 +123,7 @@ and using low KV motors.
 ## Electrical specifications
 
 * Voltage input 1S-4S (3V to 17V)
+* Onboard 5V DC/DC @500mA for voltages above 5V, else passthrough.
 * Deep sleep consumption down to 50 uA, 2-4S, with 1S 1mA.
 
 ## Mechanical specifications
@@ -148,7 +148,7 @@ always test your code without propellers attached.
 
 ## Package contents
 
-The Crazyflie 2.1 is delivered as a kit that contains the following parts:
+The Crazyflie Bolt is delivered as a kit that contains the following parts:
 
 * 1 x Crazyflie Bolt control board
 * 1 x Crazyflie Bolt (with battery cable attached)
@@ -180,4 +180,4 @@ Workaround: Don’t have the battery and the USB connected at the same time.
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-07 |
 | 2 | Changed layout | 2021-09-08 |
-| 3 | Updated errata | 2021-09-09 |
+| 3 | Updated errata and dc/dc spec. | 2021-09-09 |
