@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Crazyflie Bolt
 sku: 114991537
-version: 2
+version: 3
 status: early-access
 ---
 
@@ -84,7 +84,7 @@ Please note the following:
 * The NRF51 pins can be multiplexed with any of the available NRF51 peripheral.
 * The STM32F405RG pins can be multiplexed with more functions.
 
-### Expansion connector multiplexing
+### Expansion connector multiplexing (same as CF2.1)
 
 {% datasheet_img Mechanical drawing; large; center; crazyflie_2_1-deck-connector-multiplex.png; %}
 
@@ -111,10 +111,20 @@ Below is an image of an example setup:
 
 {% datasheet_img Mechanical drawing; medium; center; crazyflie-bolt-wiring-example.png; %}
 
+### Power
+
+The Bolt contains a power distribution board (PDB) but it is a bit limiting. The current has to pass a
+MOSFET, to be able to switch it off, and also the ESC connector. We have tested running 8A though the
+chain without any limiting heat-up, but that is as far as we would recommend to go. If additional current
+is wanted, one could bypass the connectors by soldering the ESC directly to the connector soldering pad. 
+The MOSFET is still there but a slight increase should be possible. For higher currents, an external PDB
+should be used. Other tricks to keep current down, but power up, is to run on higher voltage (3S or 4S)
+and using low KV motors.
+
 ## Electrical specifications
 
 * Voltage input 1S-4S (3V to 17V)
-* Deep sleep consumption down to 50 uA
+* Deep sleep consumption down to 50 uA, 2-4S, with 1S 1mA.
 
 ## Mechanical specifications
 
@@ -132,7 +142,7 @@ Below is an image of an example setup:
 ## Caution
 
 {% datasheet_notice warning; %}
-**NOTE:** Remember that a bigger quadcopter can be dangerous! Always use adequate prodction and
+**NOTE:** Remember that a bigger quadcopter can be dangerous! Always use adequate protection and
 always test your code without propellers attached.
 {% enddatasheet_notice %}
 
@@ -149,16 +159,14 @@ The Crazyflie 2.1 is delivered as a kit that contains the following parts:
 
 ## Errata
 
-### Power
-
-The Bolt contains a power distribution board (PDB) but it is a bit limiting. The current has to pass a
-MOSFET, to be able to switch it off, and also the ESC connector. We have tested running 8A though the
-chain without any limiting heat-up, but that is as far as we would recommend to go. If additional current
-is wanted, one could bypass the connectors by soldering the ESC directly to the connector soldering pad.
-
-The MOSFET is still there but a slight increase should be possible. For higher currents, an external PDB
-should be used. Other tricks to keep current down, but power up, is to run on higher voltage (3S or 4S)
-and using low KV motors.
+* When the Bolt is running on one cell battery (3-4.2V) the off current is higher than expected
+and around 1mA.
+Workaround: Unplug the battery when drones are not used and don’t just use the power off
+button.
+* When the Bolt is running on one cell battery (3-4.2V) don’t connect USB at the same time as
+the battery as the USB is leaking current and charging the battery unintentionally which
+potentially damages the battery after a while.
+Workaround: Don’t have the battery and the USB connected at the same time.
 
 ## Hardware revisions
 
@@ -172,3 +180,4 @@ and using low KV motors.
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-07 |
 | 2 | Changed layout | 2021-09-08 |
+| 3 | Updated errata | 2021-09-09 |
