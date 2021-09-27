@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Active marker deck
 sku: 114992074
-version: 1
+version: 2
 status: active
 ---
 
@@ -62,3 +62,4 @@ and motion capture systems.
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-01 |
+| 2 | Corrected STM32F031G6 part name | 2021-09-27 |
