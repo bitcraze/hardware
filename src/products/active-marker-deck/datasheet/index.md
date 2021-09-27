@@ -16,17 +16,20 @@ without having to carry around bulky spherical markers.
 ## Introduction
 
 The pre-flashed firmware on the deck supporting Qualisys is closed source, but
-the electronic design is open making it possible to adapt to other applications.
+the electronic design is open making it possible to adapt to other applications
+and motion capture systems.
 
 ## Features
 
 * Using Qualisys QTM
 * Robust and long range tracking
 * Supports up to 4 different marker IDs
+* Generic mode (control intensity of each LED)
+* Move an LED by cutting an arm and wiring it instead.
 
 ## Electrical specification
 
-* STM32F034G MCU
+* STM32F031G6 MCU
 * Receiving IR LED (38kHz carrier)
 * 4 x high power IR LEDs (850 nm)
 * SWD connector (compatible with Debug adapter)
