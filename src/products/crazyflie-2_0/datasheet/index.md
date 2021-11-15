@@ -127,4 +127,4 @@ The Crazyflie 2.0 is delivered as a kit that contains the following parts:
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-06 |
-| 2 | Corrected pin 0.11 and 0.12 location (swapped) | 2021-11-15 |
+| 2 | Corrected pin 0.11 and 0.12 location (swapped),<br /> renamed WKUP pin to N\_IO_2 | 2021-11-15 |
