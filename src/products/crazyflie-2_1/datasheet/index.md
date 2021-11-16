@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Crazyflie 2.1
 sku: 114991551
-version: 2
+version: 3
 status: active
 ---
 
@@ -126,3 +126,4 @@ The Crazyflie 2.1 is delivered as a kit that contains the following parts:
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-03-25 |
 | 2 | Corrected CF type number (2.0 -> 2.1) | 2021-09-02 |
+| 3 | Corrected pin 0.11 and 0.12 location (swapped),<br /> renamed WKUP pin to N\_IO_2 | 2021-11-15 |
