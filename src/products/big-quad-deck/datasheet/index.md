@@ -106,4 +106,4 @@ Next problem is how to mount the deck in a nice way on the quad, we leave that u
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-03-25 |
-| 2 | Updated with hardware version C1, added hardware revision section and updated errata | 2021-01-25 |
+| 2 | Updated with hardware version C1, added hardware revision section and updated errata | 2022-01-25 |
