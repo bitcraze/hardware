@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: SD-card deck
 sku: 114990852
-version: 1
+version: 2
 status: active
 ---
 
@@ -43,6 +43,8 @@ soldered to select another IO (IO1-3) for chip select.
 
 ### SPI bus limitations
 
+#### Rev C
+
 The SD-Card is using the SPI bus on the deck port to communicate. This has turned out to
 have some implications for the other decks that use the SPI bus. The effected decks
 are the *Loco positioning deck* and the *Flow v1/v2 deck*. An issue has been open
@@ -64,14 +66,20 @@ The following steps can he used to work around this issue:
   This means cutting GS1 and GS2 underneeth the Loco positioing deck and soldering the bridged
   GS3 and GS4. Then add ```CFLAGS += -DLOCODECK_USE_ALT_PINS``` to you ```config.mk``` as well.
 
+#### Rev D
+
+This is **TODO**.
+
 ## Hardware revisions
 
 | Revision | Comment |
 | ------- | ------- |
-| D | Initial release |
+| C | Initial release |
+| D | Improved configuration options for pins used to interface micro-SD card |
 
 ## History
 
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-01 |
+| 2 | Updated with hardware revision D and fixed initial revision to C | 2021-01-25 |
