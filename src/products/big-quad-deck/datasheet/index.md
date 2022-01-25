@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: BigQuad deck
 sku: 102990227
-version: 1
+version: 2
 status: early-access
 ---
 
@@ -81,13 +81,10 @@ The Loco deck, microSD and Flow (v2) deck all uses the SPI bus. As the BigQuad d
 
 To work around this issue do the following:
 
-* By removing capacitor C1 on the BigQuad deck (see below)
+* By removing capacitor C1 on the BigQuad deck (only valid for Rev C, Rev C1 already has this capacitor removed)
+{% datasheet_img Mechanical drawing; small; center; bigquaddeck-remove-c1.png; %}
 * Not having BQ\_DECK\_ENABLE\_PM defined.
 * Disabling the extRx functionality by commenting out extRxInit() in bigquad.c
-
-{% datasheet_img Mechanical drawing; small; center; bigquaddeck-remove-c1.png; %}
-
-Capacitor C1 is used to filter the current measurement and removing this has the effect that it will not be filtered any more. Still possible to use it if a deck using the SPI is not wanted any more.
 
 To make it work with the Flow (v2) deck more changes/patching are needed:
 
@@ -96,8 +93,17 @@ To make it work with the Flow (v2) deck more changes/patching are needed:
 
 Next problem is how to mount the deck in a nice way on the quad, we leave that up to you.
 
+
+## Hardware revisions
+
+| Revision | Comment |
+| ------- | ------- |
+| C | Initial release |
+| C1 | Capacitor C1 is not mounted |
+
 ## History
 
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-03-25 |
+| 2 | Updated with hardware version C1, added hardware revision section and updated errata | 2022-01-25 |
