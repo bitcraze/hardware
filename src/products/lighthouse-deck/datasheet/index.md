@@ -2,11 +2,11 @@
 layout: datasheet-base
 title: Lighthouse positioning deck
 sku: 114991751
-version: 2
+version: 3
 status: active
 ---
 
-{% datasheet_intro lighthouse_deck_1200px-1_1024x1024.jpg; %}
+{% datasheet_intro lighthouse_lighthouse_deck.jpg; %}
 Using the Lighthouse deck together with the HTC Vive basestations (aka Lighthouse) the
 Crazyflie is able to acheive high precision positioning. This enables high precision flying
 for autonomous flight and swarming at low cost.
@@ -42,14 +42,22 @@ which gives position and will in the future also give pose of the Crazyflie.
 ## Mechanical specifications
 
 * Weight: 2.7g
-* Size (WxHxD): 27x35x3.5mm
+* Size (WxHxD): 27x39x3.5mm
 * Designed for mounting on top of the Crazyflie 2.x
 
 ## Mechanical drawing
 
+### Rev D
+
 {% datasheet_img Mechanical drawing; medium; center; lighthouse-deck-mechanics-front.png; %}
 
 {% datasheet_img Mechanical drawing; medium; center; lighthouse-deck-mechanics-back.png; %}
+
+### Rev D1
+
+{% datasheet_img Mechanical drawing; medium; center; lighthouse-deck-mechanics-D1-front.png; %}
+
+{% datasheet_img Mechanical drawing; medium; center; lighthouse-deck-mechanics-D1-back.png; %}
 
 ## Package contents
 
@@ -62,6 +70,7 @@ which gives position and will in the future also give pose of the Crazyflie.
 | Revision | Comment |
 | ------- | ------- |
 | D | Initial release |
+| D1 | Updated board outline |
 
 ## History
 
@@ -69,3 +78,4 @@ which gives position and will in the future also give pose of the Crazyflie.
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-01 |
 | 2 | Changed state from Early access to Active | 2021-09-08 |
+| 3 | Updated with Rev D1 board outline | 2022-02-17 |
