@@ -14,13 +14,10 @@ for autonomous flight and swarming at low cost.
 
 ## Introduction
 
-The hardware supports both Lighthouse V1 and V2 base stations, but with the current firmware only
-the V1 base stations are supported. The firmware is under heavy development and V2 support will
-soon be added.
-
-The position and pose is calculated directly in the Crazyflie, which makes it possible
-to create fully autonomous systems without external communication. The deck has 4 receivers
-which gives position and will in the future also give pose of the Crazyflie.
+The deck supports both Lighthouse V1 and V2 base stations. The position and pose is calculated
+directly in the Crazyflie, which makes it possible to create fully autonomous systems without
+external communication. The deck has 4 receivers which gives position and will in the future
+also give pose of the Crazyflie.
 
 ## Features
 
