@@ -2,8 +2,8 @@
 layout: datasheet-base
 title: Flow breakout board
 sku: 114991252
-version: 1
-status: active
+version: 2
+status: eol
 ---
 
 {% datasheet_intro flow_breakout_585px-1.jpg; %}
@@ -82,3 +82,4 @@ The Flow breakout features the VL53L0x ToF sensor and the PMW3901 optical flow s
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-14 |
+| 2 | Update status to EOL | 2022-03-14 |
