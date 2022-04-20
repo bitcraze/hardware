@@ -2,8 +2,8 @@
 layout: datasheet-base
 title: AI-deck 1.1
 sku: 114992445
-version: 1
-status: early-access
+version: 2
+status: active
 ---
 
 {% datasheet_intro ai-deck-side-585px.jpg; %}
@@ -16,9 +16,6 @@ The AI-deck 1.1 is built around the GAP8 RISC-V multi-core MCU build for AI on t
 The AI-deck 1.1 extends the computational capabilities with the GAP8 and will enable complex artificial intelligence-based workloads to run onboard with the possibility to achieve fully autonomous navigation capabilities. The ESP32 adds wifi connectivity with the possibility to stream images as well as handling control. This lightweight and low power combination we believe open up many research and development areas for the micro sized Crazyflie 2.X UAV.
 
 The AI-deck 1.1 version only has minor updates compared to the AI-deck 1.0. The Himax camera module is now the monochrome version and the GAP8 MCU is now revision C instead of B.
-
-## Early access
-The AI-deck 1.1 is currently in the early-access development stage and even though the hardware has been extensively tested, the software and documentation is in an early stage. While in the early-access phase we recommend only experienced users for this board.
 
 ## Features
 
@@ -73,3 +70,4 @@ The AI-deck 1.1 is currently in the early-access development stage and even thou
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2021-02-12 |
+| 2 | Changed status to active | 2022-04-20 |
