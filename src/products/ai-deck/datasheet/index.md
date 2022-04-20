@@ -2,8 +2,8 @@
 layout: datasheet-base
 title: AI-deck
 sku: 114991982
-version: 2
-status: early-access
+version: 3
+status: active
 ---
 
 {% datasheet_intro ai-deck-side-585px.jpg; %}
@@ -14,9 +14,6 @@ The AI-deck is built around the GAP8 RISC-V multi-core MCU build for AI on the e
 ## Introduction
 
 The AI-deck extends the computational capabilities with the GAP8 and will enable complex artificial intelligence-based workloads to run onboard with the possibility to achieve fully autonomous navigation capabilities. The ESP32 adds wifi connectivity with the possibility to stream images as well as handling control. This lightweight and lowpower combination we believe open up many research and development areas for the micro sized Crazyflie 2.X UAV.
-
-## Early access
-The AI-deck is currently in the early-access development stage and even though the hardware has been extensively tested, the software and documentation is in an early stage. While in the early-access phase we recommend only experienced users for this board.
 
 ## Features
 
@@ -73,3 +70,4 @@ The AI-deck is currently in the early-access development stage and even though t
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-05-14 |
 | 2 | Changed to Bayer RGB camera | 2020-06-17 |
+| 3 | Changed status to active | 2022-04-20 |
