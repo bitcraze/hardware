@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Crazyflie Bolt 1.1
 sku: 114992769
-version: 1
+version: 2
 status: early-access
 ---
 
@@ -55,7 +55,7 @@ Using the Crazyflie Bolt 1.1 it possible to scale up your Crazyflie research or 
 * 1 x Full speed uUSB
 * 2 x Crazyflie expansion connectors (see below)
 * 2 x u.FL connectors
-* 4 x ESC connectors using PWM / OneShot125 (JST-PH)
+* 4 x JST-PH ESC connectors
 * 1 x XT30 battery connector
 
 ## Expansion connector specification
@@ -129,7 +129,7 @@ and using low KV motors.
 ## Mechanical specifications
 
 * PCBA size (WxHxD): 35x9x42mm (including connectors but not battery wire)
-* Weight: 7.3 g (PCBA only), 9.2 g (PCB + battery cable)
+* Weight: 5.4 g (PCBA only), 7.8 g (PCB + battery cable)
 * Battery cable length: 50 mm
 * ESC cable length: 60 mm
 * Antenna length: 150 mm
@@ -179,4 +179,4 @@ Workaround: Don’t have the battery and the USB connected at the same time.
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release based on Bolt | 2022-05-19 |
-
+| 2 | Updated weight for PCB/PCB+cable and ESC protocol details| 2022-06-14 |
