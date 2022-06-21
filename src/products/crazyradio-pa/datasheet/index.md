@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Crazyradio PA 2.4 GHz USB dongle
 sku: 114990112
-version: 2
+version: 3
 status: active
 ---
 
@@ -40,7 +40,7 @@ give the same range increase as with the Crazyflie 2.X.
 ## Electrical specification
 
 * Based on nRF24LU1+ chip from Nordic Semiconductor
-  * 8051 MCU at up to 16MHz with 32Kb flash and 2Kb SRAM
+  * 8051 MCU at up to 16MHz with 16Kb or 32Kb flash and 2Kb SRAM
   * 2.4GHz ISM band radio
   * USB device peripheral
   * 125 radio channels
@@ -80,6 +80,7 @@ give the same range increase as with the Crazyflie 2.X.
 * 1 x Duck antenna 2dBi
 
 ## Errata
+Due to component shortage 2022 only the 16kB flash version was sourcable (32kB not availible). It does not have any real implications as the FW only takes 6k + 2k bootloader. Crazyradio PA's manufactured with date code after 2022-06 will have the 16kB version. This can also be idetified on the chip marking. Locate the biggest chip that says NRF in the top. The 32kB version will say 24LU1P on the second row and the 16kB LU1P16.
 
 ## Hardware revisions
 
@@ -92,5 +93,6 @@ give the same range increase as with the Crazyflie 2.X.
 
 | Version | Comment | Date |
 | ------- | ------- | ---- |
+| 3 | Updated with 16kB version and added Errata | 2022-06-21 |
 | 2 | Updated revision history | 2020-06-24 |
 | 1 | Initial release | 2020-04-01 |
