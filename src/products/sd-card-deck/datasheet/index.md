@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: SD-card deck
 sku: 114990852
-version: 2
+version: 3
 status: active
 ---
 
@@ -60,19 +60,18 @@ The following steps can be used to work around this issue:
   * SCLK→TX1(PC10)
   * MISO→RX1(PC11)
   * MOSI→IO_4(PC12)
-* Compile the firmware with ```CFLAGS += -DUSDDECK_USE_ALT_PINS_AND_SPI``` in your config.mk file.
+* Then with `make menuconfig` enable `Expansion deck configuration -> Support for the Micro SD card deck ->  Use alternative SPI and alternative CS pin`.
 
 #### Rev D
 
 This revsion makes it easier to do the switch to SPI3 as described for Rev C. 
 * On the bottom of the board cut bridges GS4, GS9, GS10 and GS11. 
   Then solder GS5, GS6, GS7 and GS8 (marked ALT.SPI)
-* Compile the firmware with ```CFLAGS += -DUSDDECK_USE_ALT_PINS_AND_SPI``` in your config.mk file.
+* Then with `make menuconfig` enable `Expansion deck configuration -> Support for the Micro SD card deck ->  Use alternative SPI and alternative CS pin`.
 
 #### Together with Loco deck
-If you want to use the Loco-deck at the same time, the alternative pins for this must be used.
-This means cutting GS1 and GS2 underneeth the Loco positioing deck and soldering the bridged
-GS3 and GS4. Then add ```CFLAGS += -DLOCODECK_USE_ALT_PINS``` to you ```config.mk``` as well.
+If you want to use the Loco-deck at the same time, the alternative pins is better to use as the SPI bus can get congested. This means cutting GS1 and GS2 underneeth the Loco positioing deck and soldering the bridged
+GS3 and GS4. Then with `make menuconfig` enable `Expansion deck configuration -> Support the Loco positioning deck -> loco deck alternative IRQ and RESET pins`
 
 
 ## Hardware revisions
@@ -88,3 +87,4 @@ GS3 and GS4. Then add ```CFLAGS += -DLOCODECK_USE_ALT_PINS``` to you ```config.m
 | ------- | ------- | ---- |
 | 1 | Initial release | 2020-04-01 |
 | 2 | Updated with hardware revision D and fixed initial revision to C | 2021-01-25 |
+| 3 | Updated Errata with new kbuild setup | 2022-07-08 |
