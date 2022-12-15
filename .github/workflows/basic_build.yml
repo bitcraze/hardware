@@ -23,4 +23,4 @@ jobs:
       with:
         submodules: true
     - name: Build
-      run: docker run --rm -v ${PWD}:/module ${{builder_image}} ${{build_script}}
+      run: docker run --rm -v ${PWD}:/module ${{inputs.builder_image}} ${{inputs.build_script}}
