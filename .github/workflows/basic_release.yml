@@ -1,0 +1,100 @@
+# ,---------,       ____  _ __
+# |  ,-^-,  |      / __ )(_) /_______________ _____  ___
+# | (  O  ) |     / __  / / __/ ___/ ___/ __ `/_  / / _ \
+# | / ,--´  |    / /_/ / / /_/ /__/ /  / /_/ / / /_/  __/
+#    +------`   /_____/_/\__/\___/_/   \__,_/ /___/\___/
+#
+# Copyright (C) 2022 Bitcraze AB
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, in version 3.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+# This work flow checks out the repo, creates a draft release, builds and uploads the artifacts to the release
+
+name: Basic release
+
+on:
+  workflow_call:
+    inputs:
+      builder_image:
+        # The docker image to use to build the repo, commonly 'bitcraze/builder' or 'bitcraze/web-builder'
+        required: true
+        type: string
+      build_script:
+        # The build script to use to build the repository
+        default: './tools/build/build'
+        required: false
+        type: string
+
+jobs:
+  release:
+    name: Create Release on Github
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: ${{ github.ref }}
+        draft: true
+        prerelease: true
+    - name: Release URL on file
+      run: echo "${{ steps.create_release.outputs.upload_url }}" > release_url.txt
+    - name: Save Release URL File For Uploading Files
+      uses: actions/upload-artifact@v3
+      with:
+        name: release_url
+        path: release_url.txt
+
+  upload:
+    name: Upload Binaries to release
+    needs: [release]
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+      with:
+        submodules: true
+
+    - name: Build
+      run: docker run --rm -v ${PWD}:/module ${{builder_image}} ${{build_script}}
+
+    - name: Load Release URL File from release job
+      uses: actions/download-artifact@v3
+      with:
+        name: release_url
+
+    - name: Get Release File Name & Upload URL
+      id: get_release_info
+      run: |
+        value=`cat release_url/release_url.txt`
+        echo ::set-output name=upload_url::$value
+
+    - name: Get the version
+      id: get_release_version
+      env:
+        GITHUB_REF : ${{ github.ref }}
+      run: echo ::set-output name=release_version::${GITHUB_REF/refs\/tags\//}
+
+    # - name: Upload artifacts
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.get_release_info.outputs.upload_url }}
+    #     asset_path: bin/lps-node-firmware.dfu
+    #     asset_name: lps-node-firmware-${{ steps.get_release_version.outputs.release_version }}.dfu
+    #     asset_content_type: application/octet-stream

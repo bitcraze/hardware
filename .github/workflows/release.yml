@@ -1,0 +1,13 @@
+# Release jobs
+
+name: Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: ./.github/workflows/basic_release.yml
+    secrets: inherit
+    with:
+      builder_image: 'bitcraze/web-builder'

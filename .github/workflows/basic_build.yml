@@ -1,0 +1,26 @@
+# Build the project using the Bitcraze web builder docker image
+name: CI
+
+on:
+  workflow_call:
+    inputs:
+      builder_image:
+        # The docker image to use to build the repo, commonly 'bitcraze/builder' or 'bitcraze/web-builder'
+        required: true
+        type: string
+      build_script:
+        # The build script to use to build the repository
+        default: './tools/build/build'
+        required: false
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+    - name: Build
+      run: docker run --rm -v ${PWD}:/module ${{builder_image}} ${{build_script}}
