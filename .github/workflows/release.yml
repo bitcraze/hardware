@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    uses: bitcraze/workflows/.github/workflows/basic_release.yml@b59a297ee5a6105780d4ac832100f8990f243d04
+    uses: bitcraze/workflows/.github/workflows/basic_release.yml@05ff329562de92396520c9d8010d6c8e7e79b122
     with:
       builder_image: 'bitcraze/web-builder'
       artifacts: 'generated/docs.zip generated/md.zip'
