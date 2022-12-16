@@ -2,8 +2,6 @@
 name: CI
 
 on:
-  # TODO remove
-  workflow_dispatch:
   # TODO enable
   # push:
   #   branches: [ master ]
