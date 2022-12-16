@@ -26,75 +26,54 @@ on:
   workflow_call:
     inputs:
       builder_image:
-        # The docker image to use to build the repo, commonly 'bitcraze/builder' or 'bitcraze/web-builder'
+        description: 'The docker image to use to build the repo, commonly bitcraze/builder or bitcraze/web-builder'
         required: true
         type: string
       build_script:
-        # The build script to use to build the repository
+        description: 'The build script to use to build the repository'
         default: './tools/build/build'
         required: false
         type: string
+      artifacts:
+        description: 'A list of the artifacts to upload to the release, space-separated. Artifact files names MUST have an extension'
+        required: true
+        type: string
 
 jobs:
-  release:
-    name: Create Release on Github
-    runs-on: ubuntu-latest
-    steps:
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: ${{ github.ref }}
-        draft: true
-        prerelease: true
-    - name: Release URL on file
-      run: echo "${{ steps.create_release.outputs.upload_url }}" > release_url.txt
-    - name: Save Release URL File For Uploading Files
-      uses: actions/upload-artifact@v3
-      with:
-        name: release_url
-        path: release_url.txt
-
-  upload:
-    name: Upload Binaries to release
-    needs: [release]
+  build:
+    name: Create a release and upload artifacts
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repo
-      uses: actions/checkout@v3
-      with:
-        submodules: true
-
-    - name: Build
-      run: docker run --rm -v ${PWD}:/module ${{inputs.builder_image}} ${{inputs.build_script}}
-
-    - name: Load Release URL File from release job
-      uses: actions/download-artifact@v3
-      with:
-        name: release_url
-
-    - name: Get Release File Name & Upload URL
-      id: get_release_info
-      run: |
-        value=`cat release_url/release_url.txt`
-        echo ::set-output name=upload_url::$value
-
-    - name: Get the version
-      id: get_release_version
-      env:
-        GITHUB_REF : ${{ github.ref }}
-      run: echo ::set-output name=release_version::${GITHUB_REF/refs\/tags\//}
-
-    # - name: Upload artifacts
-    #   uses: actions/upload-release-asset@v1
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # - name: Checkout Repo
+    #   uses: actions/checkout@v3
     #   with:
-    #     upload_url: ${{ steps.get_release_info.outputs.upload_url }}
-    #     asset_path: bin/lps-node-firmware.dfu
-    #     asset_name: lps-node-firmware-${{ steps.get_release_version.outputs.release_version }}.dfu
-    #     asset_content_type: application/octet-stream
+    #     submodules: true
+
+    # - name: Build
+    #   run: docker run --rm -v ${PWD}:/module ${{inputs.builder_image}} ${{inputs.build_script}}
+
+    - name: Name artifacts
+      # Create a file pattern for the assets: "myfile-123.bin:the/path/myfile.bin otherfile-123.zip:some/path/otherfile.zip"
+      # The first part is the name of the asset when uploaded to the release (including version), the other is the build artifact
+      # This code only works if the files have an extension
+      id: name_artifacts
+      run: |
+        assets=""
+        for filepath in ${{inputs.artifacts}}; do
+        filename=$(basename "$filepath")
+        asset="${filename%.*}-${version}.${filename##*.}:${filepath}"
+        assets="$assets$asset "
+        done
+        echo "assets=${assets}" >> $GITHUB_OUTPUT
+
+    - name: Create release and upload files
+      # uses: meeDamian/github-release@2.0
+      # with:
+      #   token: ${{ secrets.GITHUB_TOKEN }}
+      #   tag: ${{ github.ref }}
+      #   name: ${{ github.ref }}
+      #   draft: true
+      #   prerelease: true
+      #   files: ${{ steps.name_artifacts.outputs.assets }}
+      run: echo "${{ steps.name_artifacts.outputs.assets }}"

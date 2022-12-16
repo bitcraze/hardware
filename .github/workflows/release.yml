@@ -11,3 +11,4 @@ jobs:
     secrets: inherit
     with:
       builder_image: 'bitcraze/web-builder'
+      artifacts: 'generated/docs.zip generated/md.zip'

@@ -2,10 +2,13 @@
 name: CI
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  # TODO remove
+  workflow_dispatch:
+  # TODO enable
+  # push:
+  #   branches: [ master ]
+  # pull_request:
+  #   branches: [ master ]
   schedule:
     # Weekly build to make sure dependencies are OK
     - cron:  '30 16 * * 4'
