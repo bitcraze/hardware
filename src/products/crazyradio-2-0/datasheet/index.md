@@ -58,7 +58,7 @@ The Crazyradio 2.0 is compatible with Crazyflie 2.x products.
 
 ## Mechanical drawing
 
-{% datasheet_img Mechanical drawing; medium; center; crazyradio-2-0-pcb-mechanics.png; %}
+{% datasheet_img Mechanical drawing; medium; center; crazyradio_2_mechanics.png; %}
 
 ## Package contents
 
