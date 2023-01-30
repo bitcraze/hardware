@@ -54,7 +54,7 @@ The Crazyradio 2.0 is compatible with Crazyflie 2.x products.
 ## Mechanical specifications
 
 * Weight: 7g
-* Size (WxHxD): TODO 61x18x8mm (including connectors)
+* Size (WxHxD): 63x18x8mm (including connectors)
 
 ## Mechanical drawing
 
