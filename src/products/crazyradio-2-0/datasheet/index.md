@@ -6,20 +6,20 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro Radio-2-0-2400px-5_1024x1024.jpeg; %}
-Crazyradio 2.0 is a long range open USB radio dongle based on the nRF52840 from Nordic Semiconductor, that features a
+{% datasheet_intro CR-2-0-1024px.jpg; %}
+Crazyradio 2.0 is a long range open USB radio dongle based on the nRF52840 from Nordic Semiconductor, featuring a
 20dBm power amplifier and LNA.
 {% enddatasheet_intro %}
 
 ## Introduction
 
-The Crazyradio 2.0 is not only for usage together with the Crazyflie and Crazyflie 2.X. Since
-it's an open project with firmware written from scratch and a Python API for usage it's great
+The Crazyradio 2.0 is not only for usage together with the Crazyflie family of devices, since
+it's an open project with open firmware and a Python API, it's a great
 building block for systems that require more predictable latency compared to WiFi and doesn't have the same
 requirements for bandwidth. The hardware comes with a
 bootloader that enables firmware upgrades via USB without any additional hardware needed.
 
-The Crazyradio 2.0 is compatible with Crazyflie 2.x products.
+The Crazyradio 2.0 is compatible with the Crazyflie eco system.
 
 ## Features
 
@@ -44,6 +44,7 @@ The Crazyradio 2.0 is compatible with Crazyflie 2.x products.
   * 3.15V out
   * 5V in
 * Standard USB-A connector
+* Programming connector
 
 ## Radio specification
 
@@ -71,10 +72,10 @@ The Crazyradio 2.0 is compatible with Crazyflie 2.x products.
 
 | Revision | Comment         |
 | -------- | --------------- |
-| A        | Initial release |
+| E        | Initial release |
 
 ## History
 
 | Version | Comment         | Date       |
 | ------- | --------------- | ---------- |
-| 1       | Initial release | 2023-01-01 |
+| 1       | Initial release | 2023-01-31 |
