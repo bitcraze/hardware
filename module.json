@@ -1,20 +1,6 @@
 {
-  "version": "1.0",
-  "environmentReq": [
-    "jekyll", "wkhtmltopdf"
-  ],
-  "artifacts": {
-    "file": [
-      {
-        "source": "generated/docs.zip",
-        "insertTag": true,
-        "destination": "currDir"
-      },
-      {
-        "source": "generated/md.zip",
-        "insertTag": true,
-        "destination": "currDir"
-      }
-    ]
+  "version": "2.0",
+  "environmentReqs": {
+    "build": ["jekyll", "wkhtmltopdf"]
   }
 }

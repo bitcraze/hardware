@@ -1,0 +1,17 @@
+# Build the project using the Bitcraze builder docker image
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+    # Weekly build to make sure dependencies are OK
+    - cron:  '30 12 * * 3'
+
+jobs:
+  build:
+    uses: bitcraze/workflows/.github/workflows/basic_build.yml@b59a297ee5a6105780d4ac832100f8990f243d04
+    with:
+      builder_image: 'bitcraze/web-builder'
