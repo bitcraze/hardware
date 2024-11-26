@@ -7,12 +7,12 @@ status: active
 ---
 
 {% datasheet_intro cf21bl-1024px.jpg; %}
-The Crazyflie 2.1 brushless brings added endurance, thrust and reliability to the  Crazyflie 2.X development ecosystem. Together with an extensive package of software and deck expansions only your imagination sets the limit.
+The Crazyflie 2.1 Brushless brings added endurance, thrust and reliability to the Crazyflie 2.X development ecosystem. Together with an extensive package of software and deck expansions only your imagination sets the limit.
 {% enddatasheet_intro %}
 
 ## Introduction
 
-The Crazyflie 2.1 brushless kit is a versatile open source flying development platform that only weighs 32g and fits in the palm of your hand. The brushless motors brings added agility and improved payload capabilities. It is equipped with low-latency radio as well as Bluetooth LE allowing for various control methods, including scripted and manual options. Custom designed low RPM propellers gives a pleasant noise as well as a high efficiency. 
+The Crazyflie 2.1 Brushless kit is a versatile open source flying development platform that only weighs 32g and fits in the palm of your hand. The brushless motors brings added agility and improved payload capabilities. It is equipped with low-latency radio as well as Bluetooth LE allowing for various control methods, including scripted and manual options. Custom designed low RPM propellers gives a pleasant noise as well as a high efficiency. 
 
 ## Features
 
@@ -78,7 +78,7 @@ The expansion connector includes the following:
 
 Please note the following:
 
-* The Crazyflie 2.X is a 3.0V system, meaning a high output will be 3.0V but still compatible with a 3.3V system.
+* The Crazyflie 2.1 Brushless is a 3.0V system, meaning a high output will be 3.0V but still compatible with a 3.3V system.
 * All IO pins are 5V tolerant except PA5 and the NRF51 pins
 * The NRF51 pins can be multiplexed with any of the available NRF51 peripheral.
 * The STM32F405RG pins can be multiplexed with more functions.
@@ -89,8 +89,8 @@ Please note the following:
 
 ## Mechanical specifications
 
-* Takeoff weight with legs: 33g 
-* Takeoff weight with guards: 36g 
+* Takeoff weight with legs: 33g
+* Takeoff weight with guards: 36g
 * Frame size: 100m (diagonal motor center to motor center)
 
 ## Mechanical drawing
@@ -99,16 +99,16 @@ Please note the following:
 
 ## Package contents
 
-The Crazyflie 2.1+ is delivered as a kit that contains the following parts:
+The Crazyflie 2.1 Brushlessis delivered as a kit that contains the following parts:
 
-* 1 x Crazyflie 2.1 brushless control board ([spare part](TBD)
+* 1 x Crazyflie 2.1 brushless control board
 * 1 x Foam battery pad
 * 1 x 350mAh LiPo battery ([spare part](https://bitcraze.myshopify.com/collections/spare-parts-crazyflie-2-0/products/350mah-lipo-battery))
-* 4 x 08028-10000KV brushless motors ([spare part](TBD)
-* 5 x Landing legs (1 spare) ([spare part](TBD)
-* 5 x Propeller guards with legs (1 spare) ([spare part](TBD)
-* 5 x CCW 55-35 propellers (3 spare) (TBD)
-* 5 x CW 55-35 propellers (3 spare) (TBD)
+* 4 x 08028-10000KV brushless motors
+* 5 x Landing legs (1 spare)
+* 5 x Propeller guards with legs (1 spare)
+* 5 x CCW 55-35 propellers (3 spare)
+* 5 x CW 55-35 propellers (3 spare)
 * 1 x Battery holder deck ([spare part](https://bitcraze.myshopify.com/collections/spare-parts-crazyflie-2-0/products/battery-holder-deck))
 * 2 x Short male deck connectors ([spare part](https://bitcraze.myshopify.com/collections/spare-parts-crazyflie-2-0/products/male-deck-connector))
 * 2 x Medium male deck connectors ([spare part](https://bitcraze.myshopify.com/collections/spare-parts-crazyflie-2-0/products/male-deck-connector))
