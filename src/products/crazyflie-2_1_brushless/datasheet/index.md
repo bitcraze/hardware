@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Crazyflie 2.1 brushless
 sku: 114993410
-version: 1
+version: 2
 status: active
 ---
 
@@ -21,7 +21,7 @@ The Crazyflie 2.1 Brushless kit is a versatile open source flying development pl
 * Easy to assemble and no soldering required
 * Supports expansion decks with automatic detection
 * Wireless firmware updates
-* On-board charging via standard uUSB or contact pads (TBD)
+* On-board charging via standard uUSB or contact pads
 * Open source software with extensive library support
 * Swarm and ROS support
 * Low latency radio with peer-two-peer functionality.
@@ -89,8 +89,8 @@ Please note the following:
 
 ## Mechanical specifications
 
-* Takeoff weight with legs: 33g
-* Takeoff weight with guards: 36g
+* Takeoff weight with legs: 34g 
+* Takeoff weight with guards: 37g 
 * Frame size: 100m (diagonal motor center to motor center)
 
 ## Mechanical drawing
@@ -103,16 +103,16 @@ The Crazyflie 2.1 Brushlessis delivered as a kit that contains the following par
 
 * 1 x Crazyflie 2.1 brushless control board
 * 1 x Foam battery pad
-* 1 x 350mAh LiPo battery ([spare part](https://bitcraze.myshopify.com/collections/spare-parts-crazyflie-2-0/products/350mah-lipo-battery))
+* 1 x 350mAh LiPo battery
 * 4 x 08028-10000KV brushless motors
 * 5 x Landing legs (1 spare)
 * 5 x Propeller guards with legs (1 spare)
 * 5 x CCW 55-35 propellers (3 spare)
 * 5 x CW 55-35 propellers (3 spare)
-* 1 x Battery holder deck ([spare part](https://bitcraze.myshopify.com/collections/spare-parts-crazyflie-2-0/products/battery-holder-deck))
-* 2 x Short male deck connectors ([spare part](https://bitcraze.myshopify.com/collections/spare-parts-crazyflie-2-0/products/male-deck-connector))
-* 2 x Medium male deck connectors ([spare part](https://bitcraze.myshopify.com/collections/spare-parts-crazyflie-2-0/products/male-deck-connector))
-* 1 x micro-USB cable (48cm) ([spare part](https://bitcraze.myshopify.com/collections/accessories/products/micro-usb-cable-48cm))
+* 1 x Battery holder deck
+* 2 x Short male deck connectors
+* 2 x Medium male deck connectors
+* 1 x micro-USB cable (48cm)
 * 1 x Tiny philips screw driver
 
 ## Errata
@@ -121,11 +121,12 @@ The Crazyflie 2.1 Brushlessis delivered as a kit that contains the following par
 
 | Revision | Comment |
 | ------- | ------- |
-| B1 | Initial release |
+| G | Initial release |
 
 ## History
 
 | Version | Comment | Date |
 | ------- | ------- | ---- |
 | 1 | Initial release | 2024-10-02 |
+| 2 | Updated  weight and removed spare part links | 2024-12-09 |
 
