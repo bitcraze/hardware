@@ -91,7 +91,7 @@ Please note the following:
 
 * Takeoff weight with legs: 34g 
 * Takeoff weight with guards: 37g 
-* Frame size: 100m (diagonal motor center to motor center)
+* Frame size: 100mm (diagonal motor center to motor center)
 
 ## Mechanical drawing
 
