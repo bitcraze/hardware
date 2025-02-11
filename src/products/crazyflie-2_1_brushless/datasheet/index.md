@@ -2,7 +2,7 @@
 layout: datasheet-base
 title: Crazyflie 2.1 brushless
 sku: 114993410
-version: 2
+version: 3
 status: active
 ---
 
@@ -16,7 +16,7 @@ The Crazyflie 2.1 Brushless kit is a versatile open source flying development pl
 
 ## Features
 
-* Fully compatible with the Crazyflie 2.X ecosystem
+* Fully compatible with the Crazyflie 2.X ecosystem (except LED-ring)
 * Multiple position technology support
 * Easy to assemble and no soldering required
 * Supports expansion decks with automatic detection
@@ -129,4 +129,5 @@ The Crazyflie 2.1 Brushlessis delivered as a kit that contains the following par
 | ------- | ------- | ---- |
 | 1 | Initial release | 2024-10-02 |
 | 2 | Updated  weight and removed spare part links | 2024-12-09 |
+| 3 | Added (except LED-ring) to features compatibility | 2025-01-11 |
 
