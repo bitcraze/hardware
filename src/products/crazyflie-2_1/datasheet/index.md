@@ -13,7 +13,7 @@ Together with an extensive ecosystem of software and deck expansions it's ideal 
 
 ## Introduction
 
-The Crazyflie 2.1 is a versatile open source flying development platform that only weighs 27g and fits in the palm of your hand.
+The Crazyflie 2.1 is a versatile open source flying development platform that only weighs 29g and fits in the palm of your hand.
 Crazyflie 2.1 is equipped with low-latency/long-range radio as well as Bluetooth LE. This gives you the option of downloading
 our app and using your mobile device as a controller or, in combination with the Crazyradio PA, using your computer to display
 data and fly with a game controller.
@@ -89,7 +89,7 @@ Please note the following:
 
 ## Mechanical specifications
 
-* Takeoff weight: 27g
+* Takeoff weight: 29g
 * Size (WxHxD): 92x92x29mm (motor-to-motor and including motor mount feet)
 
 ## Mechanical drawing
