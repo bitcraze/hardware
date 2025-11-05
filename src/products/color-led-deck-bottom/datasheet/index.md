@@ -30,8 +30,8 @@ Use the Color LED deck, mounted underneath the Crazyflie, to create vivid lighti
 
 ## Mechanical specifications 
 
-* Weight: 2.2g without the diffuser
-* Size (WxHxD): 32.4x32.4x4.5mm without the diffuser
+* Weight: 2.2g (3.4g with the diffuser)
+* Size (WxHxD): 32.4x32.4x4.5mm (34.7x34.7x11.6mm with the diffuser)
 * Designed for mounting under the Crazyflie facing downwards
 
 ## Mechanical drawing
