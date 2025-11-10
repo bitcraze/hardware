@@ -1,7 +1,7 @@
 ---
 layout: datasheet-base
 title: Crazyflie 2.1 brushless
-sku: 114993410
+sku: 100060743(VN), 114993410(CN)
 version: 3
 status: active
 ---
