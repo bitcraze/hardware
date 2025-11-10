@@ -6,7 +6,7 @@ version: 1
 status: active
 ---
 
-{% datasheet_intro Color-led-deck-bottom_205x205px.png; %}
+{% datasheet_intro Color-LED-deck-bottom-585px.png; %}
 Add vibrant illumination and visual feedback to your flights with the Crazyflie Color LED Deck. Equipped with one powerful WRGB LED positioned underneath your drone, it allows you to create bright, full-color lighting effects or status indicators directly from your Crazyflie firmware. Visible from below and the sides, the Color LED Deck is perfect for experimentation, signaling, or simply lighting up your drone in style.
 {% enddatasheet_intro %}
 
@@ -28,10 +28,10 @@ Use the Color LED deck, mounted underneath the Crazyflie, to create vivid lighti
 * WRGB LED up to ~300mA per channel
 * STM32C011 MCU as the LED controller
 
-## Mechanical specifications 
+## Mechanical specifications
 
-* Weight: 2.2g (3.4g with the diffuser)
-* Size (WxHxD): 32.4x32.4x4.5mm (34.7x34.7x11.6mm with the diffuser)
+* Weight: 3.4g with the diffuser
+* Size (WxHxD): 34.7x34.7x11.6mm with the diffuser
 * Designed for mounting under the Crazyflie facing downwards
 
 ## Mechanical drawing
@@ -55,4 +55,4 @@ Use the Color LED deck, mounted underneath the Crazyflie, to create vivid lighti
 
 | Version | Comment | Date |
 | ------- | ------- | ---- |
-
+| 1 | Initial release | TBD |
