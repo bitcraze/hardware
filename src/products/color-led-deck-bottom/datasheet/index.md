@@ -36,7 +36,7 @@ Use the Color LED deck, mounted underneath the Crazyflie, to create vivid lighti
 
 ## Mechanical drawing
 
-{% datasheet_img Mechanical drawing; medium; center; color-led-deck-mechanics.png; %}
+{% datasheet_img Mechanical drawing; large; center; color-led-deck-mechanics.png; %}
 
 ## Package contents
 
