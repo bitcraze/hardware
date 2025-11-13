@@ -1,7 +1,7 @@
 ---
 layout: datasheet-base
 title: Flow deck v2
-sku: 114991549
+sku: 114993493(VN), 114991549(CN)
 version: 1
 status: active
 ---

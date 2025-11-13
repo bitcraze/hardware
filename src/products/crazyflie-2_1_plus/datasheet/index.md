@@ -1,7 +1,7 @@
 ---
 layout: datasheet-base
 title: Crazyflie 2.1+
-sku: 114993295
+sku: 114993491(VN), 114993295(CN)
 version: 1
 status: active
 ---

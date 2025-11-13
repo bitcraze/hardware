@@ -1,7 +1,7 @@
 ---
 layout: datasheet-base
 title: Crazyradio 2.0
-sku: 114993067
+sku: 114993492(VN), 114993067(CN)
 version: 1
 status: active
 ---
