@@ -7,9 +7,8 @@ status: active
 ---
 
 {% datasheet_intro qi-charger-deck-585px.jpg; %}
-Need to charge your Crazyflie 2.X without connecting the micro-USB cable? Then the Qi 1.2
-charging deck is a great option. It supports the same Qi standard as mobile phones up
-to 1A at 5V.
+Need to charge your Crazyflie 2.X without connecting the micro-USB cable? Then the Crazyflie<sup>TM</sup> Qi 1.2 wireless charging deck is a great option. 
+It supports the same Qi standard as mobile phones up to 1A at 5V.
 {% enddatasheet_intro %}
 
 ## Introduction

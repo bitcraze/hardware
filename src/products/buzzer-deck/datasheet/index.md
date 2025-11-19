@@ -8,7 +8,7 @@ status: active
 
 {% datasheet_intro BuzzerDeckPic_3_of_4_1024x1024.jpg; %}
 Sometimes LED feedback isn’t enough, like when you’re flying around in a lab or a living room.
-With the buzzer deck you’ll get audio feedback on system events, like low battery or charging
+With the Crazyflie<sup>TM</sup> Buzzer deck you’ll get audio feedback on system events, like low battery or charging
 completed. Or why not create your own melodies that will play while you’re buzzing around?
 {% enddatasheet_intro %}
 

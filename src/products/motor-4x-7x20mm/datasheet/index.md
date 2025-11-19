@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro 4x_7x20mm_DC_motor_400px.JPG; %}
-Pack of 4 upgrade 7x20 mm brushed coreless DC-motors for Crazyflie 2.X.
+Pack of 4 Crazyflie<sup>TM</sup> 7x20 mm brushed coreless DC-motors for the Crazyflie 2.X.
 {% enddatasheet_intro %}
 
 ## Mechanical specifications

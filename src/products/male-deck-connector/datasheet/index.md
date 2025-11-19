@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro male-connector-2400px-1_1024x1024.jpg; %}
-Spare male deck connectors
+Crazyflie<sup>TM</sup> Spare male deck connectors.
 {% enddatasheet_intro %}
 
 ## Introduction

@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro spare-part-bundle-400px.jpg; %}
-Get everything you need to keep your Crazyflie 2.X in shape even after some hard crashes.
+Get everything you need to keep your Crazyflie 2.X in shape even after some hard crashes with the Crazyflie<sup>TM</sup> Spare part bundle.
 {% enddatasheet_intro %}
 
 ## Introduction

@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro prototyping-deck-400px-3_1024x1024.jpg; %}
-Add a prototyping area to your Crazyflie 2.X and lift your electronics into the air.
+The Crazyflie<sup>TM</sup> Prototyping deck allows you to add a prototyping area to your Crazyflie 2.X and lift your electronics into the air.
 Just solder directly on the expansion board and plug it to the expansion port.
 {% enddatasheet_intro %}
 

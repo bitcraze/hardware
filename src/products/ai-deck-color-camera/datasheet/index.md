@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro 608H_A_585px.jpg; %}
-The AI-deck color camera module is a color camera module, HM01B0-ANA, with a 320 x 320 resolution targeting computer vision applications from Himax. For full datasheet please contact Himax Technologies Inc.
+The Crazyflie<sup>TM</sup> AI-deck color camera module is a color camera module, HM01B0-ANA, with a 320 x 320 resolution targeting computer vision applications from Himax. For full datasheet please contact Himax Technologies Inc.
 {% enddatasheet_intro %}
 
 ## Introduction

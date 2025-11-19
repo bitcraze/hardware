@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro debug-adapter-kit-400px-3_1024x1024.jpg; %}
-This adapter is used to convert a number of standard connectors into the
+The Crazyflie<sup>TM</sup> Debug adapter is used to convert a number of standard connectors into the
 debug connector that is used on Bitcraze products.
 {% enddatasheet_intro %}
 

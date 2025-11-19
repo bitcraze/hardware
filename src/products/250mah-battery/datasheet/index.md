@@ -12,7 +12,7 @@ Maximize yor flight time with spare batteries.
 
 ## Introduction
 
-The Crazyflie spare battery is the same as the battery that ships with the Crazyflie. It's designed to fit
+The Crazyflie<sup>TM</sup> 250mAh LiPo battery is the same as the battery that ships with the Crazyflie. It's designed to fit
 between the expansion connectors and is optimized for the Crazyflie.
 
 ## Features

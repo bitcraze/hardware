@@ -8,7 +8,7 @@ status: active
 
 
 {% datasheet_intro active-maker-front-1024px_1024x1024.jpg; %}
-The active marker deck gives users robust and long range tracking using Qualisys QTM.
+The Crazyflie<sup>TM</sup> Active marker deck gives users robust and long range tracking using Qualisys QTM.
 The deck supports up to 4 IDs so it's possible to have many different configurations
 without having to carry around bulky spherical markers.
 {% enddatasheet_intro %}

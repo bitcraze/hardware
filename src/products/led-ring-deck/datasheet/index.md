@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro Led-ring-deck-400px-1_1024x1024.jpg; %}
-Light up the dark with custom patterns or get visual feedback using the Crazyflie LED-ring
+Light up the dark with custom patterns or get visual feedback using the Crazyflie<sup>TM</sup> LED-ring
 deck. Featuring 12 strong RGB LEDs facing downwards, you can create custom patterns in firmware
 that you control. Two additional strong front facing LEDs that can be switched on and off,
 act as headlights.

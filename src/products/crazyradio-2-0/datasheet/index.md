@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro CR-2-0-1024px.jpg; %}
-Crazyradio 2.0 is a long range open USB radio dongle based on the nRF52840 from Nordic Semiconductor, featuring a
+The Crazyflie<sup>TM</sup> Crazyradio 2.0 is a long range open USB radio dongle based on the nRF52840 from Nordic Semiconductor, featuring a
 20dBm power amplifier and LNA.
 {% enddatasheet_intro %}
 

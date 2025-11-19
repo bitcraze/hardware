@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro led-diffuser-under-585px.png; %}
-Improve the visibility and look of your Crazyflie lighting with the Crazyflie LED Diffuser. 
+Improve the visibility and look of your Crazyflie lighting with the Crazyflie<sup>TM</sup> LED Diffuser. 
 Designed to attach seamlessly to both the Color LED Deck and the LED-ring Deck, it spreads and softens the light, extending visibility to the sides in addition to the usual top or bottom view.
 The lightweight plastic construction ensures minimal impact on flight performance while adding a smooth, even glow. 
 Perfect for clearer visual feedback, improved visibility, or simply lighting up your Crazyflie in style.

@@ -7,7 +7,7 @@ status: early-access
 ---
 
 {% datasheet_intro BigQuadDeck-4_1024x1024.jpg; %}
-With the BigQuad deck you can transform your Crazyflie 2.X to a bigger quad by connecting external ESCs (Electronic Speed Controller) to the breakout connectors on the deck.
+With the Crazyflie<sup>TM</sup> BigQuad deck you can transform your Crazyflie 2.X to a bigger quad by connecting external ESCs (Electronic Speed Controller) to the breakout connectors on the deck.
 {% enddatasheet_intro %}
 
 ## Introduction

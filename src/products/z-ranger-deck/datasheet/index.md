@@ -7,7 +7,7 @@ status: eol
 ---
 
 {% datasheet_intro z-ranger_deck_side_400px_1024x1024.jpeg; %}
-The Z-ranger deck uses a laser sensor to measure the distance to the ground and adds
+The Crazyflie<sup>TM</sup> Z-ranger deck uses a laser sensor to measure the distance to the ground and adds
 the possibility to fly with precise height control.
 {% enddatasheet_intro %}
 
