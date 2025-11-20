@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro propellers-47-17-green-1024px.jpg; %}
-With a new and improved design these propellers gives the Crazyflie a boost in efficiency. Both flight time and maximum thrust is increased with up to 15%!
+With a new and improved design the Crazyflie<sup>TM</sup> 47-17 propellers gives the Crazyflie a boost in efficiency. Both flight time and maximum thrust is increased with up to 15%!
 
 Note: This propeller is not the stock propeller delivered with the Crazyflie 2.1
 

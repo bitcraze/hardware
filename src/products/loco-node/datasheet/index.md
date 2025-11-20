@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro Loco-node-400px-1_1024x1024.jpeg; %}
-The Loco Positioning Node is a versatile positioning device that can run either as an Anchor or Tag in a Loco Positioning system. The system measures the distance between Nodes and Tags, and from those distances the absolute position of objects carrying Tags can be calculated.
+The Crazyflie<sup>TM</sup> Loco positioning node is a versatile positioning device that can run either as an Anchor or Tag in a Loco Positioning system. The system measures the distance between Nodes and Tags, and from those distances the absolute position of objects carrying Tags can be calculated.
 {% enddatasheet_intro %}
 
 ## Introduction

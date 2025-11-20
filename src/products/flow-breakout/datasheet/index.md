@@ -7,7 +7,7 @@ status: eol
 ---
 
 {% datasheet_intro flow_breakout_585px-1.jpg; %}
-The Flow breakout board is used for motion tracking and can easily be connected to any robotics
+The Crazyflie<sup>TM</sup> Flow breakout board is used for motion tracking and can easily be connected to any robotics
 project or other design.
 {% enddatasheet_intro %}
 

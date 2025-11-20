@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro Motor-mounts-crazyflie-2.0-400px-1.JPG; %}
-Spare motor mounts for Crazyflie 2.X
+Crazyflie<sup>TM</sup> Spare motor mounts for Crazyflie 2.X
 {% enddatasheet_intro %}
 
 ## Mechanical specifications

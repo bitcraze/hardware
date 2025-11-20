@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro CF21_plus_585px.jpg; %}
-The Crazyflie 2.1+ version of the successful Crazyflie 2.X development platform comes with upgraded battery and propellers for a up to 15% improved flight performance. Together with an extensive ecosystem of software and deck expansions it's ideal for education, research and swarming.
+The Crazyflie<sup>TM</sup> 2.1+ version of the successful Crazyflie 2.X development platform comes with upgraded battery and propellers for a up to 15% improved flight performance. Together with an extensive ecosystem of software and deck expansions it's ideal for education, research and swarming.
 {% enddatasheet_intro %}
 
 ## Introduction

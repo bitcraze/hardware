@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro cf21bl-1024px.jpg; %}
-The Crazyflie 2.1 Brushless brings added endurance, thrust and reliability to the Crazyflie 2.X development ecosystem. Together with an extensive package of software and deck expansions only your imagination sets the limit.
+The Crazyflie<sup>TM</sup> 2.1 Brushless brings added endurance, thrust and reliability to the Crazyflie 2.X development ecosystem. Together with an extensive package of software and deck expansions only your imagination sets the limit.
 {% enddatasheet_intro %}
 
 ## Introduction

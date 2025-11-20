@@ -7,8 +7,8 @@ status: active
 ---
 
 {% datasheet_intro SD-deck-400px-3_1024x1024.jpeg; %}
-Add the possibility to read and write files to a micro SD card. This could be used for
-high speed logging or for storing configuration.
+Add the possibility to read and write files to a micro SD card with the Crazyflie<sup>TM</sup> SD-card deck. This deck can be used for
+high speed logging or for storing configurations.
 {% enddatasheet_intro %}
 
 ## Features

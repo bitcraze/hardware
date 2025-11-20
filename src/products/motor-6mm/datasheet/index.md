@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro 6mm_DC_motor_400px.JPG; %}
-Spare motor for Crazyflie 1.0
+Crazyflie<sup>TM</sup> Spare motor for Crazyflie 1.0
 {% enddatasheet_intro %}
 
 ## Mechanical specifications

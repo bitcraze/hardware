@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro female-header-400px.jpg; %}
-Use these female deck connectors for designing your own decks that are compatible
+Use the Crazyflie<sup>TM</sup> Female deck connectors for designing your own decks that are compatible
 with the Crazyflie 2.X.
 {% enddatasheet_intro %}
 

@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro charger-battery-400px-1_1024x1024.jpg; %}
-Use the Bitcraze battery charger to always have your spare batteries full to maximize your flight time.
+Use the Crazyflie<sup>TM</sup> Battery charger to always have your spare batteries full to maximize your flight time.
 {% enddatasheet_intro %}
 
 ## Introduction

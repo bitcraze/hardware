@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro ai-deck-side-585px.jpg; %}
-The AI-deck is built around the GAP8 RISC-V multi-core MCU build for AI on the edge purposes. Adding to this a QVGA Bayer RGB camera and a ESP32 WiFi MCU. This all together creates a pretty good platform to develop low power AI on the edge for a drone.
+The Crazyflie<sup>TM</sup> AI-deck is built around the GAP8 RISC-V multi-core MCU build for AI on the edge purposes. Adding to this a QVGA Bayer RGB camera and a ESP32 WiFi MCU. This all together creates a pretty good platform to develop low power AI on the edge for a drone.
 
 {% enddatasheet_intro %}
 

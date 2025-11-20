@@ -7,7 +7,7 @@ status: early-access
 ---
 
 {% datasheet_intro crazyflie_bolt_585px.jpg; %}
-The Crazyflie Bolt is a Crazyflie 2.X compatible flight controller for brushless builds.
+The Crazyflie<sup>TM</sup> Bolt is a Crazyflie 2.X compatible flight controller for brushless builds.
 It is intended to have the strengths of the Crazyflie 2.1, but in a slightly bit bigger package.
 It uses the same sensors as the Crazyflie 2.1 and the firmware binaries are compatible with both.
 {% enddatasheet_intro %}

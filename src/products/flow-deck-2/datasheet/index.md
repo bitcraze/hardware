@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro flow_deck_v2_585px.jpg; %}
-The Flow deck gives the Crazyflie 2.X the ability to detect its motions in any direction.
+The Crazyflie<sup>TM</sup> Flow deck v2 gives the Crazyflie 2.X the ability to detect its motions in any direction.
 The VL53L1x ToF sensor measures the distance to the ground with high precision and the PMW3901
 optical flow sensor measures movements of the ground.
 {% enddatasheet_intro %}
