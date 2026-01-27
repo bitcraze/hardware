@@ -34,7 +34,7 @@ The long deck pins are compatible with all products that have a deck expansion h
 
 ## Package contents
 
-* 4 x long pins 19+2+4mm
+* 4 x long pins 15+4+6mm
 
 ## History
 
