@@ -7,7 +7,7 @@ status: active
 ---
 
 {% datasheet_intro long-pins-15-4-6mm-585px.png; %}
-The Crazyflie<sup>TM</sup> long  pins 15+4+6mm are designed to increase expansion capability by enabling additional decks to be mounted on the Crazyflie platform. The wider plastic spacer provides mechanical rigidity and extra support for the AI-deck when mounted underneath, helping keep it level.
+The Crazyflie<sup>TM</sup> long pins 15+4+6mm are designed to increase expansion capability by enabling additional decks to be mounted on the Crazyflie platform. The wider plastic spacer provides mechanical rigidity and extra support for the AI-deck when mounted underneath, helping keep it level.
 {% enddatasheet_intro %}
 
 ## Introduction
