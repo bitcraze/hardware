@@ -30,7 +30,7 @@ This part is compatible with all products that have a deck expansion header.
   * Sections: pin 9mm - plastic 2mm - pin 2mm
   * Weight: 0.4g
   * Size (BxHxW): 20x13x2mm
-* Long pins
+* Medium pins
   * Sections: pin 15mm - plastic 2mm - pin 2mm
   * Weight: 0.3g
   * Size (BxHxW): 20x19x2mm
