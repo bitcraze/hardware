@@ -1,7 +1,7 @@
 ---
 layout: datasheet-base
 title: Long pins 15+4+6mm
-sku: 114992164 
+sku: 114992164
 version: 1
 status: active
 ---
