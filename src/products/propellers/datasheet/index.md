@@ -9,6 +9,8 @@ status: active
 {% datasheet_intro Propellers-400px-1_1024x1024.jpeg; %}
 Crazyflie<sup>TM</sup> Spare propellers that fit Crazyflie 1.0 and Crazyflie 2.X
 
+Note: This propeller is not the stock propeller delivered with the Crazyflie 2.1+
+
 {% enddatasheet_intro %}
 
 ## Mechanical specifications
